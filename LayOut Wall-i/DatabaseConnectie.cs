@@ -14,6 +14,7 @@ namespace LayOut_Wall_i
         private SqlConnection conn;
         private void Connect()
         {
+            //connect met de database
             try
             {
                 this.conn = new SqlConnection(connectionString);
@@ -27,6 +28,7 @@ namespace LayOut_Wall_i
 
         private void Disconnect()
         {
+            //disconnect met de database
             try
             {
                 this.conn.Close();
@@ -47,15 +49,12 @@ namespace LayOut_Wall_i
             try
             {
                 this.Connect();
-
                 string query = "SELECT * FROM Leerling WHERE Email = @email AND Wachtwoord = @wachtwoord";
                 SqlCommand command = new SqlCommand(query, this.conn);
                 command.Parameters.AddWithValue("@email", email);
                 command.Parameters.AddWithValue("@wachtwoord", wachtwoord);
-
                 SqlDataReader reader = command.ExecuteReader();
-
-                if (reader.HasRows)
+                if (reader.HasRows) //als inloggegevens kloppen, zet alle gegevens in gebruiker
                 {
                     while (reader.Read())
                     {

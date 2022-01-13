@@ -30,6 +30,7 @@ namespace LayOut_Wall_i
         int count = 1;
         string personPicPath;
 
+        //string array van foto's waar personen instaan voor de verificatie
         String[] picsPath = { @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\foto.png",
                 @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Mark.jpg",
                 @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\NietMark.jpg",
@@ -41,9 +42,12 @@ namespace LayOut_Wall_i
             InitializeComponent();
             gezichtsHerkenner.Connect();
             Client = new FaceClient(new ApiKeyServiceClientCredentials(SubscriptionKey)) { Endpoint = EndPoint };
+
+            //laadt webcam in als form opstart
             LoadDevice();
             cboCamera.SelectedIndex = 0;
             StartVideo();
+
             lblScan.Parent = pbScan;
             lblScan.BackColor = Color.Transparent;
         }
@@ -51,6 +55,7 @@ namespace LayOut_Wall_i
         private async void btnScannen_Click(object sender, EventArgs e)
         {
             Opslaan();
+            //string van de foto die gemaakt is met de webcam
             personPicPath = @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Foto" + count.ToString() + ".png";
 
             string naam = "a";
@@ -59,10 +64,11 @@ namespace LayOut_Wall_i
             {
                 lblScanPopUp1.Visible = true;
                 lblScanPopUp2.Visible = true;
-                bool result = await GezichtsHerkenner.VergelijkGroep(Client, personPicPath, picsPath, naam);
 
+                bool result = await GezichtsHerkenner.VergelijkGroep(Client, personPicPath, picsPath, naam);
                 if (result)
                 {
+                    //als gezicht succesvol is herkent, door naar menu form
                     MessageBox.Show("Gezicht geïdentificeerd!");
                     BeginschermWalli beginscherm = new BeginschermWalli();
                     this.Hide();
@@ -72,6 +78,8 @@ namespace LayOut_Wall_i
             catch(Exception ex)
             {
                 MessageBox.Show("Gezicht niet herkent!, probeer het nog eens.");
+
+                //na foute inlog via gezichtsherkenning kan je naar de handmatige inlog form
                 btnHandmatigeLogin.Visible = true;
                 lblScanPopUp1.Visible = false;
                 lblScanPopUp2.Visible = false;
@@ -122,6 +130,7 @@ namespace LayOut_Wall_i
 
             try
             {
+                //haalt eigenschappen op van de foto uit de webcam
                 GezichtsHerkenner.DetectFaceExtractFile(Client, file, recognitionModel);
                 count++;
             }

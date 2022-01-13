@@ -15,7 +15,6 @@ namespace TurnBasedGame
     {
         Speler speler1;
         Speler speler2;
-
         public Form1()
         {
             InitializeComponent();
@@ -78,6 +77,7 @@ namespace TurnBasedGame
 
         private void btnSurvivalBack_Click(object sender, EventArgs e)
         {
+            //terug naar gameselect form
             GameMenuOG form = new GameMenuOG();
             this.Hide();
             form.ShowDialog();

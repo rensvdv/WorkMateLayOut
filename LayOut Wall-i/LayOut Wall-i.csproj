@@ -196,17 +196,23 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BattleSim\Assassin.cs" />
-    <Compile Include="BeginschermNaInloggen.cs">
+    <Compile Include="Agenda\AgendaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BeginschermNaInloggen.Designer.cs">
+    <Compile Include="Agenda\AgendaForm.Designer.cs">
+      <DependentUpon>AgendaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BattleSim\Assassin.cs" />
+    <Compile Include="Menu Forms\BeginschermNaInloggen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Forms\BeginschermNaInloggen.Designer.cs">
       <DependentUpon>BeginschermNaInloggen.cs</DependentUpon>
     </Compile>
-    <Compile Include="BeginschermWalli.cs">
+    <Compile Include="Menu Forms\BeginschermWalli.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BeginschermWalli.Designer.cs">
+    <Compile Include="Menu Forms\BeginschermWalli.Designer.cs">
       <DependentUpon>BeginschermWalli.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseConnectie.cs" />
@@ -231,10 +237,10 @@
       <DependentUpon>GezichtHerkennenOG.cs</DependentUpon>
     </Compile>
     <Compile Include="GezichtsHerkenning\GezichtsHerkenner.cs" />
-    <Compile Include="Inlogscherm\Inlogscherm.cs">
+    <Compile Include="Inlogscherm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inlogscherm\Inlogscherm.Designer.cs">
+    <Compile Include="Inlogscherm.Designer.cs">
       <DependentUpon>Inlogscherm.cs</DependentUpon>
     </Compile>
     <Compile Include="BattleSim\Medic.cs" />
@@ -253,10 +259,10 @@
     <Compile Include="WeerCode.Designer.cs">
       <DependentUpon>WeerCode.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameMenuOG.cs">
+    <Compile Include="Menu Forms\GameMenuOG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameMenuOG.Designer.cs">
+    <Compile Include="Menu Forms\GameMenuOG.Designer.cs">
       <DependentUpon>GameMenuOG.cs</DependentUpon>
     </Compile>
     <Compile Include="GIFFwalli.cs" />
@@ -271,10 +277,10 @@
     <Compile Include="Settings.Designer.cs" />
     <Compile Include="Spraak.cs" />
     <Compile Include="Weer.cs" />
-    <EmbeddedResource Include="BeginschermNaInloggen.resx">
+    <EmbeddedResource Include="Menu Forms\BeginschermNaInloggen.resx">
       <DependentUpon>BeginschermNaInloggen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BeginschermWalli.resx">
+    <EmbeddedResource Include="Menu Forms\BeginschermWalli.resx">
       <DependentUpon>BeginschermWalli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BattleSim\Form1.resx">
@@ -286,13 +292,13 @@
     <EmbeddedResource Include="GezichtsHerkenning\GezichtHerkennenOG.resx">
       <DependentUpon>GezichtHerkennenOG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inlogscherm\Inlogscherm.resx">
+    <EmbeddedResource Include="Inlogscherm.resx">
       <DependentUpon>Inlogscherm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WeerCode.resx">
       <DependentUpon>WeerCode.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameMenuOG.resx">
+    <EmbeddedResource Include="Menu Forms\GameMenuOG.resx">
       <DependentUpon>GameMenuOG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -520,6 +526,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Gezcihtscan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="KaartGame\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />

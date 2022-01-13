@@ -17,6 +17,7 @@ namespace HetWeer
 {
     public partial class Form1 : Form
     {
+        Gebruiker gebruiker;
         Spraak spraak = new Spraak();
 
         Weer api = new Weer("http://api.weatherapi.com/v1/current.xml?key=8fee798205ff4b0e965154533212311&q=Tilburg&aqi=yes");
@@ -49,6 +50,36 @@ namespace HetWeer
             lblTilburg.BackColor = Color.Transparent;
         }
 
+        //2e constructor om gebruiker mee te geven na inloggen
+        public Form1(Gebruiker gebruiker)
+        {
+            InitializeComponent();
+
+            this.gebruiker = gebruiker;
+
+            lbTemperatuur.Parent = pbAchtergrondWeer;
+            lbTemperatuur.BackColor = Color.Transparent;
+
+            lbVoeltAls.Parent = pbAchtergrondWeer;
+            lbVoeltAls.BackColor = Color.Transparent;
+
+            lbWindSnelheid.Parent = pbAchtergrondWeer;
+            lbWindSnelheid.BackColor = Color.Transparent;
+
+            lbHumiditeit.Parent = pbAchtergrondWeer;
+            lbHumiditeit.BackColor = Color.Transparent;
+
+            lbWolken.Parent = pbAchtergrondWeer;
+            lbWolken.BackColor = Color.Transparent;
+
+
+            lblNederland.Parent = pbAchtergrondWeer;
+            lblNederland.BackColor = Color.Transparent;
+
+
+            lblTilburg.Parent = pbAchtergrondWeer;
+            lblTilburg.BackColor = Color.Transparent;
+        }
         private void button2_Click(object sender, EventArgs e)
         { 
             XDocument bestand = XDocument.Load(api.Url);

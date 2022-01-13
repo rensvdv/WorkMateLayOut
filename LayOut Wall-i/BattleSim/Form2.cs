@@ -21,7 +21,7 @@ namespace TurnBasedGame
             this.speler1 = speler1;
             this.speler2 = speler2;
 
-
+            //labels en progressbar bijwerken
             lblKarakterSpeler1.Text = this.speler1.ToString();
             lblKarakterSpeler2.Text = this.speler2.ToString();
 
@@ -35,6 +35,7 @@ namespace TurnBasedGame
 
         }
 
+        //na 1 knop indrukken spelers knoppen uitzetten
         private void ButtonsSpeler1Uitzetten()
         {
             
@@ -64,7 +65,7 @@ namespace TurnBasedGame
 
         private void Speler1HealBtnEnZwareAanval()
         {
-            //speler 1 heal aanzetten 3 beurten na het gebruiken
+            //speler 1 heal uitzetten voor 3 beurten na het gebruiken
             if (speler1.Heal == true)
             {
                 btnSpeler1Heal.Enabled = false;
@@ -92,7 +93,7 @@ namespace TurnBasedGame
 
         private void Speler2HealBtnEnZwareAanval()
         {
-            //speler 2 heal aanzetten 3 beurten na het gebruiken
+            //speler 2 heal uitzetten voor 3 beurten na het gebruiken
             if (speler2.Heal == true)
             {
                 btnSpeler2Heal.Enabled = false;
@@ -121,20 +122,22 @@ namespace TurnBasedGame
 
         private void Winst()
         {
-            if (speler1.CheckVoorWinst() == true)
+            //als er een winnaar is, terug naar game kiezen form
+            if (speler1.CheckVoorWinst())
             {
                 MessageBox.Show("De " + speler2.ToString() + " heeft gewonnen!");
-                Application.Restart();
+                TerugNaarGameSelectie();
             }
-            else if (speler2.CheckVoorWinst() == true)
+            else if (speler2.CheckVoorWinst())
             {
                 MessageBox.Show("De " + speler1.ToString() + " heeft gewonnen!");
-                Application.Restart();
+                TerugNaarGameSelectie();
             }
         }
 
         private void ProgressBarBijwerken()
         {
+            //progressbar bijwerken na attacks
             if(speler1.Hp > 0)
             {
                 pbHpSpeler1.Value = speler1.Hp;
@@ -146,6 +149,12 @@ namespace TurnBasedGame
             }
         }
 
+        private void TerugNaarGameSelectie()
+        {
+            Form1 form = new Form1();
+            this.Hide();
+            form.ShowDialog();
+        }
         private void btnSpeler1LichteAanval_Click(object sender, EventArgs e)
         {
             speler1.LichteAanval(speler2);
@@ -212,9 +221,7 @@ namespace TurnBasedGame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            this.Hide();
-            form.ShowDialog();
+            TerugNaarGameSelectie();
         }
     }
 }
