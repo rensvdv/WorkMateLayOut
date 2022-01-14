@@ -9,39 +9,82 @@ using System.Threading.Tasks;
 
 namespace HetWeer
 {
-    class Spraak
+    public class Spraak
     {
-        SpeechSynthesizer speechSynth = new SpeechSynthesizer();
-        public List<string> Keuzes { get; private set; }
+        public SpeechRecognitionEngine speechRec { get; set; }
+        public SpeechSynthesizer speechSynth { get; set; } = new SpeechSynthesizer();
+        public List<string> Keuzes { get; }
         public string Keuze { get; set; }
         public string Antwoord { get; set; }
-        public List<string> Antwoorden { get; private set; }
+        public List<string> Antwoorden { get; }
         public Spraak()
         {
-            speechSynth.SelectVoiceByHints(VoiceGender.Female);
-            this.Keuzes = File.ReadAllLines(@"C:\Users\Cezar Pop\source\repos\HetWeer\HetWeer\Vragen.txt").ToList();
-            this.Antwoorden = File.ReadAllLines(@"C:\Users\Cezar Pop\source\repos\HetWeer\HetWeer\Antwoorden.txt").ToList();
+            speechRec = new SpeechRecognitionEngine();
+            speechSynth.SelectVoiceByHints(VoiceGender.Male);
+            this.Keuzes = File.ReadAllLines(@"C:\Users\zessa\Desktop\Speech_Recognition\Speech_Recognition\Vragen.txt").ToList();
+            this.Antwoorden = File.ReadAllLines(@"C:\Users\zessa\Desktop\Speech_Recognition\Speech_Recognition\Antwoorden.txt").ToList();
+            Choices commandos = new Choices();
+            commandos.Add(this.Keuzes.ToArray());
+            GrammarBuilder grBuilder = new GrammarBuilder();
+            grBuilder.Append(commandos);
+            Grammar grammer = new Grammar(grBuilder);
+            speechRec.LoadGrammarAsync(grammer);
+            speechRec.SetInputToDefaultAudioDevice();
+            speechRec.RecognizeAsync(RecognizeMode.Multiple);
         }
-
-        public void Reageer(List<string> keuzes, string vraag)
+        public void Reageer(string vraag)
         {
-            bool bevat = false;
-            for (int i = 0; i < this.Keuzes.Count; i++)
+            if (ValideVraag(vraag))
             {
-                if (keuzes[i] == vraag)
+                if (this.Keuzes.IndexOf(vraag) != -1)
                 {
-                    speechSynth.SpeakAsync(this.Antwoorden[i]);
-                    bevat = true;
+                    Zeg(this.Antwoorden[this.Keuzes.IndexOf(vraag)]);
                 }
             }
-            if (!bevat)
+            else
             {
-                speechSynth.SpeakAsync("Ask me another question");
+                Zeg("I can't hear you, please ask me a better question");
             }
+        }
+        public bool ValideVraag(string vraag)
+        {
+            bool check = false;
+            foreach (string keuze in this.Keuzes)
+            {
+                if (keuze == vraag || keuze.Contains(vraag))
+                {
+                    check = true;
+                }
+            }
+            return check;
         }
         public void Zeg(string text)
         {
-            speechSynth.SpeakAsync(text);
+            this.speechSynth.SpeakAsync(text);
+        }
+        public void StopMetPraten()
+        {
+            if (this.speechSynth.State != SynthesizerState.Paused)
+            {
+                this.speechSynth.Pause();
+            }
+        }
+        public void StartMetPraten()
+        {
+            if (this.speechSynth.State == SynthesizerState.Paused)
+            {
+                this.speechSynth.Resume();
+            }
+        }
+        public void StopMetLuisteren(string text)
+        {
+            this.speechRec.RecognizeAsyncCancel();
+            Reageer(text);
+        }
+        public void StartMetLuisteren()
+        {
+            Zeg("walli is awake, ask me a question");
+            this.speechRec.RecognizeAsync(RecognizeMode.Multiple);
         }
         public void VoegVraagEnAntwoordtToe(string keuze, string antwoordt)
         {
@@ -49,9 +92,10 @@ namespace HetWeer
             {
                 this.Keuzes.Add(keuze);
                 this.Antwoorden.Add(antwoordt);
+                speechSynth.SpeakAsync("question and answer are added to choices");
             }
-            File.WriteAllLines(@"C:\Users\Cezar Pop\source\repos\HetWeer\HetWeer\Vragen.txt", this.Keuzes);
-            File.WriteAllLines(@"C:\Users\Cezar Pop\source\repos\HetWeer\HetWeer\Antwoorden.txt", this.Antwoorden);
+            File.WriteAllLines(@"C:\Users\zessa\Desktop\Speech_Recognition\Speech_Recognition\Vragen.txt", this.Keuzes);
+            File.WriteAllLines(@"C:\Users\zessa\Desktop\Speech_Recognition\Speech_Recognition\Antwoorden.txt", this.Antwoorden);
         }
     }
 

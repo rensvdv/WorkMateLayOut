@@ -17,6 +17,8 @@ namespace LayOut_Wall_i
         public string Wachtwoord { get; set; }
 
         public string Klas { get; set; }
+        public string Vak { get; set; }
+        public string Lokaal { get; set; }
 
         public int LeerlingNummer { get; set; }
 
@@ -26,6 +28,11 @@ namespace LayOut_Wall_i
 
         public Gebruiker()
         {
+            Ingelogd = false;
+        }
+        public Gebruiker(string naam)
+        {
+            this.Naam = naam;
             Ingelogd = false;
         }
     }

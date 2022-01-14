@@ -11,8 +11,8 @@ namespace LayOut_Wall_i
     {
 
         private static string connectionString = @"Data Source=SQL1\SQLEXPRESS;Initial Catalog=workmate;Integrated Security=True; TrustServerCertificate=True";
-        private SqlConnection conn;
-        private void Connect()
+        public SqlConnection conn { get; set; }
+        public void Connect()
         {
             //connect met de database
             try
@@ -26,7 +26,7 @@ namespace LayOut_Wall_i
             }
         }
 
-        private void Disconnect()
+        public void Disconnect()
         {
             //disconnect met de database
             try
@@ -64,6 +64,8 @@ namespace LayOut_Wall_i
                         gebruiker.Wachtwoord = reader["Wachtwoord"].ToString();
                         gebruiker.Klas = reader["Klas"].ToString();
                         gebruiker.Docenten = reader["Docenten"].ToString();
+                        gebruiker.Lokaal = reader["Lokaal"].ToString();
+                        gebruiker.Vak = reader["Vak"].ToString();
 
                     }
                 }
