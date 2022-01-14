@@ -277,6 +277,9 @@
     <Compile Include="Settings.Designer.cs" />
     <Compile Include="Spraak.cs" />
     <Compile Include="Weer.cs" />
+    <EmbeddedResource Include="Agenda\AgendaForm.resx">
+      <DependentUpon>AgendaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu Forms\BeginschermNaInloggen.resx">
       <DependentUpon>BeginschermNaInloggen.cs</DependentUpon>
     </EmbeddedResource>
@@ -529,6 +532,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="KaartGame\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agenda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agenda2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agenda1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
