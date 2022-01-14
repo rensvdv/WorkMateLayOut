@@ -74,10 +74,21 @@ namespace LayOut_Wall_i
                     this.Hide();
                     beginscherm.ShowDialog();
                 }
+                else
+                {
+                    //gezicht wel herkent, maar komt niet overeen met foto's
+                    MessageBox.Show("Niemand herkend, probeer het nog eens of log in!");
+
+                    //na foute inlog via gezichtsherkenning kan je naar de handmatige inlog form
+                    btnHandmatigeLogin.Visible = true;
+                    lblScanPopUp1.Visible = false;
+                    lblScanPopUp2.Visible = false;
+                }
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Gezicht niet herkent!, probeer het nog eens.");
+                //geen gezicht herkent in webcam foto
+                MessageBox.Show("Geen gezicht herkent! probeer het nog eens.");
 
                 //na foute inlog via gezichtsherkenning kan je naar de handmatige inlog form
                 btnHandmatigeLogin.Visible = true;

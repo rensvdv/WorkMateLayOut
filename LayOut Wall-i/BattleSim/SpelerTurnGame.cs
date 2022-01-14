@@ -42,7 +42,10 @@ namespace TurnBasedGame
             {
                 Hp += heal;
             }
-
+            else
+            {
+                Hp = MaxHp;
+            }
             Heal = !Heal;
             HealCount = 0;
         }
