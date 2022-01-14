@@ -49,7 +49,9 @@ namespace LayOut_Wall_i
 
         private void button2_Click(object sender, EventArgs e)
         {
-      
+            SurvivalGame sur = new SurvivalGame();
+            this.Hide();
+            sur.ShowDialog();
         }
     }
 }

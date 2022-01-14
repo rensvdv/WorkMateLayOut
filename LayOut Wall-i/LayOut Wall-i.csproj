@@ -229,6 +229,12 @@
     </Compile>
     <Compile Include="DatabaseConnectie.cs" />
     <Compile Include="Player.cs" />
+    <Compile Include="SurvivalGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurvivalGame.Designer.cs">
+      <DependentUpon>SurvivalGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="SurvivalGame\Enemy.cs" />
     <Compile Include="BattleSim\Form1.cs">
       <SubType>Form</SubType>
@@ -262,10 +268,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SurvivalGame\LeaderBoard.cs" />
     <Compile Include="SurvivalGame\Speler.cs" />
     <Compile Include="BattleSim\SpelerTurnGame.cs" />
     <Compile Include="BattleSim\Swordsman.cs" />
     <Compile Include="BattleSim\Tank.cs" />
+    <Compile Include="Survival_Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survival_Game.Designer.cs">
+      <DependentUpon>Survival_Game.cs</DependentUpon>
+    </Compile>
     <Compile Include="WeerCode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -313,6 +326,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inlogscherm.resx">
       <DependentUpon>Inlogscherm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurvivalGame.resx">
+      <DependentUpon>SurvivalGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survival_Game.resx">
+      <DependentUpon>Survival_Game.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WeerCode.resx">
       <DependentUpon>WeerCode.cs</DependentUpon>
