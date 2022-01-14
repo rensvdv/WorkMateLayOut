@@ -35,7 +35,6 @@ namespace LayOut_Wall_i
                 @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Mark.jpg",
                 @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\NietMark.jpg",
                 @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\JohnCena.jpg",
-                @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Persoon.jpg"
                };
         public GezichtHerkennenOG()
         {
