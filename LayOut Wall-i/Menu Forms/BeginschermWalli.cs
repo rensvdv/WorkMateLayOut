@@ -32,14 +32,14 @@ namespace LayOut_Wall_i
 
         private void btnGames_Click_1(object sender, EventArgs e)
         {
-            GameMenuOG games = new GameMenuOG(gebruiker);
+            GameMenuOG games = new GameMenuOG();
             this.Hide();
             games.ShowDialog();
         }
 
         private void btnWeer_Click_1(object sender, EventArgs e)
         {
-            HetWeer.Form1 weer = new HetWeer.Form1(gebruiker);
+            HetWeer.Form1 weer = new HetWeer.Form1();
             this.Hide();
             weer.ShowDialog();
         }

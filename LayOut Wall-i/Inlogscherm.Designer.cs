@@ -74,6 +74,7 @@ namespace LayOut_Wall_i
             this.tbxWachtwoord.PasswordChar = '*';
             this.tbxWachtwoord.Size = new System.Drawing.Size(234, 22);
             this.tbxWachtwoord.TabIndex = 3;
+            this.tbxWachtwoord.UseSystemPasswordChar = true;
             // 
             // btnLogIn
             // 
