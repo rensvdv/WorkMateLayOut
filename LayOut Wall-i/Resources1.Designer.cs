@@ -193,6 +193,17 @@ namespace LayOut_Wall_i {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap christmas_gold_color_shiny_abstract_background_flat_lay_soft_focus_creative_166193648 {
+            get {
+                object obj = ResourceManager.GetObject("christmas-gold-color-shiny-abstract-background-flat-lay-soft-focus-creative-16619" +
+                        "3648", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cloudy_weather_icon_free_vector {
             get {
                 object obj = ResourceManager.GetObject("cloudy-weather-icon-free-vector", resourceCulture);
@@ -507,6 +518,16 @@ namespace LayOut_Wall_i {
         internal static System.Drawing.Bitmap Superman {
             get {
                 object obj = ResourceManager.GetObject("Superman", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vraagteken {
+            get {
+                object obj = ResourceManager.GetObject("Vraagteken", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

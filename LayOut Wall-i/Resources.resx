@@ -124,6 +124,9 @@
   <data name="Achtergrondversiering1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Achtergrondversiering2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Gamezone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Gamezone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gekleurde-aquarel-spiraal-nevel-galaxy-achtergrond_125540-4651" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\gekleurde-aquarel-spiraal-nevel-galaxy-achtergrond_125540-4652.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,9 +148,6 @@
   <data name="disco-ball-gif-17" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\disco-ball-gif-17.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GameMenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\GameMenuAchtergrond1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Gamezone2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Gamezone2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -168,6 +168,9 @@
   </data>
   <data name="Starlight Black_SLAB_web" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Starlight Black_SLAB_web.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agenda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\agenda1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Achtergrondversier" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Achtergrondversier1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,11 +196,14 @@
   <data name="stars-universe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\stars-universe.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Vraagteken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Vraagteken.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="WeerSplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\WeerSplash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="stars-twinkle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\stars-twinkle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Catwoman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Catwoman1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gekleurde-aquarel-spiraal-nevel-galaxy-achtergrond_125540-465" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\gekleurde-aquarel-spiraal-nevel-galaxy-achtergrond_125540-4651.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,8 +217,8 @@
   <data name="WalliSplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\WalliSplash.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gamezone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Gamezone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GameMenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GameMenuAchtergrond1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\images.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,14 +259,14 @@
   <data name="cloudy-weather-icon-free-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\cloudy-weather-icon-free-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Catwoman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Catwoman1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\gras.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Arcade" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Arcade.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gras" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\gras.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WalliSplash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\WalliSplash1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="galaxy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\galaxy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,13 +277,13 @@
   <data name="Bullets" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Bullets1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WalliSplash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\WalliSplash1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="stars-twinkle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\stars-twinkle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="a0590e93a50aa3da22b16ecc2535bfb2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\a0590e93a50aa3da22b16ecc2535bfb2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agenda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\agenda1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="christmas-gold-color-shiny-abstract-background-flat-lay-soft-focus-creative-166193648" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\christmas-gold-color-shiny-abstract-background-flat-lay-soft-focus-creative-166193648.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

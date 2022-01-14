@@ -39,5 +39,17 @@ namespace LayOut_Wall_i
             this.Hide();
             form.ShowDialog();      
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ArenaGame form = new ArenaGame();
+            this.Hide();
+            form.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+      
+        }
     }
 }
