@@ -50,10 +50,10 @@ namespace LayOut_Wall_i
             Schade = 0;
         }
 
-        public virtual void BanditAttack(Player player, Player player2)
+        public virtual void BanditAttack(Player player2)
         {
             Schade = 19;
-            player.Score += Schade;
+            this.Score += Schade;
             player2.Score -= Schade;
             Schade = 0;
         }
@@ -92,16 +92,16 @@ namespace LayOut_Wall_i
             {
                 player.Verlies++;
                 this.Winst++;
-                player.Score = 0;
-                this.Score = 0;
+                player.Score = 200;
+                this.Score = 200;
             }
 
             else if (player.Score > 0 && this.Score <= 0)
             {
                 this.Verlies++;
                 player.Winst++;
-                player.Score = 0;
-                this.Score = 0;
+                player.Score = 200;
+                this.Score = 200;
             }
         }
     }

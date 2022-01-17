@@ -44,14 +44,6 @@ namespace LayOut_Wall_i
             kaarten.Add(kaart6);
             kaarten.Add(kaart7);
 
-            kaart1.JuisteKleurBijType();
-            kaart2.JuisteKleurBijType();
-            kaart3.JuisteKleurBijType();
-            kaart4.JuisteKleurBijType();
-            kaart5.JuisteKleurBijType();
-            kaart6.JuisteKleurBijType();
-            kaart7.JuisteKleurBijType();
-
             BtnAanUit();
 
             Status();
@@ -67,6 +59,12 @@ namespace LayOut_Wall_i
             lblScore2.Parent = pbAchtergrond;
             lblScore3.Parent = pbAchtergrond;
             lblScore4.Parent = pbAchtergrond;
+            lbVerhaal1.Parent = pbAchtergrond;
+            lbVerhaal2.Parent = pbAchtergrond;
+            lbVerhaal3.Parent = pbAchtergrond;
+            lbVerhaal4.Parent = pbAchtergrond;
+            lbVerhaal5.Parent = pbAchtergrond;
+            lbVerhaal6.Parent = pbAchtergrond;
         }
 
         private void ZetAlleLabelAchtergrondenTransparant(Color color)
@@ -113,110 +111,146 @@ namespace LayOut_Wall_i
             return this.kaarten[RandomKaart.Next(this.kaarten.Count)];
         }
 
+        public Color getColor1(Color color)
+        {
+            KleurBalk1.BackColor = color;
+            return color;
+        }
+
+        public Color getColor2(Color color)
+        {
+            KleurBalk2.BackColor = color;
+            return color;
+        }
+
         private void btnAanval_Click(object sender, EventArgs e)
         {
             Kaart kaart = RandomkaartMethode();
 
             lblType1.Text = kaart.Naam;
+            lbVerhaal1.Text = Convert.ToString(kaart.KaartVerhaal1());
+            lbVerhaal2.Text = Convert.ToString(kaart.KaartVerhaal2());
+            lbVerhaal3.Text = Convert.ToString(kaart.KaartVerhaal3());
 
             if (kaart.Naam == "Ridder")
             {
                 pbMain.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\RidderKaart.jpg");
                 player1.PowerAttack(player2);
                 lblScore4.Text = player2.Score.ToString();
+                getColor1(Color.Cyan);
             }
             if (kaart.Naam == "Schildknaap")
             {
                 pbMain.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\Schildknaap.jpg");
                 player1.NormalAttack(player2);
                 lblScore4.Text = player2.Score.ToString();
+                getColor1(Color.Magenta);
             }
             if (kaart.Naam == "Bandiet")
             {
                 pbMain.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\Bandit2.jpg");
-                player1.BanditAttack(player1, player2);
+                player1.BanditAttack(player2);
                 lblScore2.Text = player1.Score.ToString();
                 lblScore4.Text = player2.Score.ToString();
+                getColor1(Color.Gold);
             }
             if (kaart.Naam == "Waterlady")
             {
                 pbMain.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\Waterlady.png");
                 player1.Healen(player1);
                 lblScore2.Text = player1.Score.ToString();
+                getColor1(Color.Crimson);
             }
             if (kaart.Naam == "Reaper")
             {
                 pbMain.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\Reaper1.jpg");
                 player1.SelfDmg1(player1);
                 lblScore2.Text = player1.Score.ToString();
+                getColor1(Color.SpringGreen);
             }
             if (kaart.Naam == "DOOM")
             {
                 pbMain.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\doom.jpg");
                 player1.SelfDmg2(player1);
                 lblScore2.Text = player1.Score.ToString();
+                getColor1(Color.Black);
             }
             if (kaart.Naam == "Pest")
             {
                 pbMain.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\pes.jpg");
                 player1.PestAttack(player2);
                 lblScore4.Text = player2.Score.ToString();
+                getColor1(Color.HotPink);
             }
+
+            Status();
 
             player1.WinstOfVerlies(player2);
 
             BtnAanUit();
         }
 
-        private void btnAanval2_Click_1(object sender, EventArgs e)
+        private void btnAanval2_Click(object sender, EventArgs e)
         {
             Kaart kaart = RandomkaartMethode();
 
             lblType2.Text = kaart.Naam;
+            lbVerhaal4.Text = Convert.ToString(kaart.KaartVerhaal1());
+            lbVerhaal5.Text = Convert.ToString(kaart.KaartVerhaal2());
+            lbVerhaal6.Text = Convert.ToString(kaart.KaartVerhaal3());
 
             if (kaart.Naam == "Ridder")
             {
                 pbMain2.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\RidderKaart.jpg");
                 player2.PowerAttack(player1);
                 lblScore2.Text = player1.Score.ToString();
+                getColor2(Color.Cyan);
             }
             if (kaart.Naam == "Schildknaap")
             {
                 pbMain2.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\Schildknaap.jpg");
                 player2.NormalAttack(player1);
                 lblScore2.Text = player1.Score.ToString();
+                getColor2(Color.Magenta);
             }
             if (kaart.Naam == "Bandiet")
             {
                 pbMain2.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\Bandit2.jpg");
-                player2.BanditAttack(player2, player1);
+                player2.BanditAttack(player1);
                 lblScore4.Text = player2.Score.ToString();
                 lblScore2.Text = player1.Score.ToString();
+                getColor2(Color.Gold);
             }
             if (kaart.Naam == "Waterlady")
             {
                 pbMain2.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\Waterlady.png");
                 player2.Healen(player2);
                 lblScore4.Text = player2.Score.ToString();
+                getColor2(Color.Crimson);
             }
             if (kaart.Naam == "Reaper")
             {
                 pbMain2.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\Reaper1.jpg");
                 player2.SelfDmg1(player2);
                 lblScore4.Text = player2.Score.ToString();
+                getColor2(Color.SpringGreen);
             }
             if (kaart.Naam == "DOOM")
             {
                 pbMain2.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\doom.jpg");
                 player2.SelfDmg2(player2);
                 lblScore4.Text = player2.Score.ToString();
+                getColor2(Color.Black);
             }
             if (kaart.Naam == "Pest")
             {
                 pbMain2.Image = Image.FromFile(@"C:\Users\Cezar Pop\Pictures\Camera Roll\pes.jpg");
                 player2.PestAttack(player1);
                 lblScore2.Text = player1.Score.ToString();
+                getColor2(Color.HotPink);
             }
+
+            Status();
 
             player2.WinstOfVerlies(player1);
 
@@ -224,5 +258,5 @@ namespace LayOut_Wall_i
         }
     }
 }
-    
+
 

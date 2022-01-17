@@ -67,6 +67,12 @@ namespace LayOut_Wall_i
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pbAchtergrond = new System.Windows.Forms.PictureBox();
+            this.lbVerhaal6 = new System.Windows.Forms.Label();
+            this.lbVerhaal5 = new System.Windows.Forms.Label();
+            this.lbVerhaal4 = new System.Windows.Forms.Label();
+            this.lbVerhaal3 = new System.Windows.Forms.Label();
+            this.lbVerhaal2 = new System.Windows.Forms.Label();
+            this.lbVerhaal1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRight2)).BeginInit();
@@ -132,6 +138,7 @@ namespace LayOut_Wall_i
             this.btnAanval2.TabIndex = 140;
             this.btnAanval2.Text = "Gebruik!";
             this.btnAanval2.UseVisualStyleBackColor = false;
+            this.btnAanval2.Click += new System.EventHandler(this.btnAanval2_Click);
             // 
             // btnAanval
             // 
@@ -484,16 +491,82 @@ namespace LayOut_Wall_i
             this.pbAchtergrond.Image = global::LayOut_Wall_i.Properties.Resources.Arena_Background;
             this.pbAchtergrond.Location = new System.Drawing.Point(-2, -21);
             this.pbAchtergrond.Name = "pbAchtergrond";
-            this.pbAchtergrond.Size = new System.Drawing.Size(1117, 669);
+            this.pbAchtergrond.Size = new System.Drawing.Size(1117, 728);
             this.pbAchtergrond.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAchtergrond.TabIndex = 158;
             this.pbAchtergrond.TabStop = false;
+            // 
+            // lbVerhaal6
+            // 
+            this.lbVerhaal6.AutoSize = true;
+            this.lbVerhaal6.Font = new System.Drawing.Font("Matura MT Script Capitals", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVerhaal6.ForeColor = System.Drawing.Color.White;
+            this.lbVerhaal6.Location = new System.Drawing.Point(624, 680);
+            this.lbVerhaal6.Name = "lbVerhaal6";
+            this.lbVerhaal6.Size = new System.Drawing.Size(0, 20);
+            this.lbVerhaal6.TabIndex = 176;
+            // 
+            // lbVerhaal5
+            // 
+            this.lbVerhaal5.AutoSize = true;
+            this.lbVerhaal5.Font = new System.Drawing.Font("Matura MT Script Capitals", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVerhaal5.ForeColor = System.Drawing.Color.White;
+            this.lbVerhaal5.Location = new System.Drawing.Point(624, 649);
+            this.lbVerhaal5.Name = "lbVerhaal5";
+            this.lbVerhaal5.Size = new System.Drawing.Size(0, 20);
+            this.lbVerhaal5.TabIndex = 175;
+            // 
+            // lbVerhaal4
+            // 
+            this.lbVerhaal4.AutoSize = true;
+            this.lbVerhaal4.Font = new System.Drawing.Font("Matura MT Script Capitals", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVerhaal4.ForeColor = System.Drawing.Color.White;
+            this.lbVerhaal4.Location = new System.Drawing.Point(624, 619);
+            this.lbVerhaal4.Name = "lbVerhaal4";
+            this.lbVerhaal4.Size = new System.Drawing.Size(0, 20);
+            this.lbVerhaal4.TabIndex = 174;
+            // 
+            // lbVerhaal3
+            // 
+            this.lbVerhaal3.AutoSize = true;
+            this.lbVerhaal3.Font = new System.Drawing.Font("Matura MT Script Capitals", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVerhaal3.ForeColor = System.Drawing.Color.White;
+            this.lbVerhaal3.Location = new System.Drawing.Point(110, 680);
+            this.lbVerhaal3.Name = "lbVerhaal3";
+            this.lbVerhaal3.Size = new System.Drawing.Size(0, 20);
+            this.lbVerhaal3.TabIndex = 173;
+            // 
+            // lbVerhaal2
+            // 
+            this.lbVerhaal2.AutoSize = true;
+            this.lbVerhaal2.Font = new System.Drawing.Font("Matura MT Script Capitals", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVerhaal2.ForeColor = System.Drawing.Color.White;
+            this.lbVerhaal2.Location = new System.Drawing.Point(110, 649);
+            this.lbVerhaal2.Name = "lbVerhaal2";
+            this.lbVerhaal2.Size = new System.Drawing.Size(0, 20);
+            this.lbVerhaal2.TabIndex = 172;
+            // 
+            // lbVerhaal1
+            // 
+            this.lbVerhaal1.AutoSize = true;
+            this.lbVerhaal1.Font = new System.Drawing.Font("Matura MT Script Capitals", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVerhaal1.ForeColor = System.Drawing.Color.White;
+            this.lbVerhaal1.Location = new System.Drawing.Point(110, 619);
+            this.lbVerhaal1.Name = "lbVerhaal1";
+            this.lbVerhaal1.Size = new System.Drawing.Size(0, 20);
+            this.lbVerhaal1.TabIndex = 171;
             // 
             // ArenaGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1114, 645);
+            this.ClientSize = new System.Drawing.Size(1114, 704);
+            this.Controls.Add(this.lbVerhaal6);
+            this.Controls.Add(this.lbVerhaal5);
+            this.Controls.Add(this.lbVerhaal4);
+            this.Controls.Add(this.lbVerhaal3);
+            this.Controls.Add(this.lbVerhaal2);
+            this.Controls.Add(this.lbVerhaal1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.KleurBalk2);
             this.Controls.Add(this.KleurBalk1);
@@ -594,5 +667,11 @@ namespace LayOut_Wall_i
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pbAchtergrond;
+        private System.Windows.Forms.Label lbVerhaal6;
+        private System.Windows.Forms.Label lbVerhaal5;
+        private System.Windows.Forms.Label lbVerhaal4;
+        private System.Windows.Forms.Label lbVerhaal3;
+        private System.Windows.Forms.Label lbVerhaal2;
+        private System.Windows.Forms.Label lbVerhaal1;
     }
 }
