@@ -121,11 +121,8 @@
   <data name="YogaAap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\YogaAap1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gamezone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Gamezone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gekleurde-aquarel-spiraal-nevel-galaxy-achtergrond_125540-465" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\gekleurde-aquarel-spiraal-nevel-galaxy-achtergrond_125540-4651.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Achtergrondversiering1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Achtergrondversiering2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gekleurde-aquarel-spiraal-nevel-galaxy-achtergrond_125540-4651" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\gekleurde-aquarel-spiraal-nevel-galaxy-achtergrond_125540-4652.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,17 +139,17 @@
   <data name="Starlight Black_SLAB_web1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Starlight Black_SLAB_web1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Maroonredd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Maroonredd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="stars-twinkle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\stars-twinkle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vulling3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\vulling3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cloudy-weather-icon-free-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\cloudy-weather-icon-free-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="disco-ball-gif-17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\disco-ball-gif-17.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bullets" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Bullets1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GameMenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GameMenuAchtergrond1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gamezone2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Gamezone2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,8 +160,8 @@
   <data name="SplashartTURNBASEGAME1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\SplashartTURNBASEGAME3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Starlight Black_SLAB_web2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Starlight Black_SLAB_web2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="stars-shooting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\stars-shooting.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ZakaGameSplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ZakaGameSplash1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,20 +178,20 @@
   <data name="Achtergrondversier" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Achtergrondversier1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="373f77f1eb1a21c1c7e627c42c6b6136" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\373f77f1eb1a21c1c7e627c42c6b6136.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Superman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Superman1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cyber-unlock-security-concept.-lock-symbol-form-lines" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\cyber-unlock-security-concept.-lock-symbol-form-lines.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gamingzone_800x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Gamingzone_800x.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="robo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\robo2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="christmas-gold-color-shiny-abstract-background-flat-lay-soft-focus-creative-166193648" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\christmas-gold-color-shiny-abstract-background-flat-lay-soft-focus-creative-166193648.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Vulling2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Vulling2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Achtergrondversiering" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Achtergrondversiering1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,11 +205,11 @@
   <data name="main-qimg-db5639d88c0d11bc04653ebdc2d346ae" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\main-qimg-db5639d88c0d11bc04653ebdc2d346ae.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="a0590e93a50aa3da22b16ecc2535bfb2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\a0590e93a50aa3da22b16ecc2535bfb2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Catwoman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Catwoman1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Superman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Superman1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gekleurde-aquarel-spiraal-nevel-galaxy-achtergrond_125540-465" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\gekleurde-aquarel-spiraal-nevel-galaxy-achtergrond_125540-4651.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Starlight Black_SLAB_web3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Starlight Black_SLAB_web3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,20 +217,23 @@
   <data name="Achtergrondversier1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Achtergrondversier2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WalliSplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\WalliSplash.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Robo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Robo1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GameMenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\GameMenuAchtergrond1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SplashartTURNBASEGAME" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SplashartTURNBASEGAME2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\images.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="disco-ball-gif-17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\disco-ball-gif-17.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Robo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Robo1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gamezone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Gamezone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WalliSplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\WalliSplash.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Starlight Black_SLAB_web2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Starlight Black_SLAB_web2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MijnGameSplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\MijnGameSplash1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,23 +250,26 @@
   <data name="falling-stars1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\falling-stars1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SplashartTURNBASEGAME" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\SplashartTURNBASEGAME2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="robo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\robo2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="stars-shooting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\stars-shooting.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Vulling2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Vulling2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AngryMonkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\AngryMonkey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WeerSplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\WeerSplash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Maroonredd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Maroonredd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="falling-stars" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\falling-stars.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="373f77f1eb1a21c1c7e627c42c6b6136" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\373f77f1eb1a21c1c7e627c42c6b6136.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Robo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Robo3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloudy-weather-icon-free-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\cloudy-weather-icon-free-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\gras.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,8 +277,8 @@
   <data name="Arcade" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Arcade.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WalliSplash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\WalliSplash1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WeerSplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\WeerSplash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="galaxy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\galaxy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,16 +286,16 @@
   <data name="ArcadeOG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ArcadeOG1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Catwoman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Catwoman1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bullets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Bullets1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="stars-twinkle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\stars-twinkle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WalliSplash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\WalliSplash1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Achtergrondversiering1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Achtergrondversiering2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="a0590e93a50aa3da22b16ecc2535bfb2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\a0590e93a50aa3da22b16ecc2535bfb2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Robo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Robo3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Navy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Navy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
