@@ -525,6 +525,16 @@ namespace LayOut_Wall_i {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Starlight_Black_SLAB_web4 {
+            get {
+                object obj = ResourceManager.GetObject("Starlight Black_SLAB_web4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap stars_shooting {
             get {
                 object obj = ResourceManager.GetObject("stars-shooting", resourceCulture);

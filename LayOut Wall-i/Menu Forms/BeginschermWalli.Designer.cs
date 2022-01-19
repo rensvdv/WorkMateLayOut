@@ -35,7 +35,6 @@ namespace LayOut_Wall_i
             this.btnWeer = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -45,7 +44,6 @@ namespace LayOut_Wall_i
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -97,7 +95,7 @@ namespace LayOut_Wall_i
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox7.Image = global::LayOut_Wall_i.Resources.Navy;
+            this.pictureBox7.Image = global::LayOut_Wall_i.Resources.Starlight_Black_SLAB_web4;
             this.pictureBox7.Location = new System.Drawing.Point(646, 29);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(40, 478);
@@ -108,7 +106,7 @@ namespace LayOut_Wall_i
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox6.Image = global::LayOut_Wall_i.Resources.Navy;
+            this.pictureBox6.Image = global::LayOut_Wall_i.Resources.Starlight_Black_SLAB_web4;
             this.pictureBox6.Location = new System.Drawing.Point(-3, 29);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(40, 478);
@@ -116,20 +114,10 @@ namespace LayOut_Wall_i
             this.pictureBox6.TabIndex = 27;
             this.pictureBox6.TabStop = false;
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::LayOut_Wall_i.Properties.Resources.Hi;
-            this.pictureBox11.Location = new System.Drawing.Point(117, 229);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 26;
-            this.pictureBox11.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Black;
-            this.pictureBox3.Image = global::LayOut_Wall_i.Resources.Navy;
+            this.pictureBox3.Image = global::LayOut_Wall_i.Resources.Starlight_Black_SLAB_web4;
             this.pictureBox3.Location = new System.Drawing.Point(-3, 0);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(689, 40);
@@ -140,7 +128,7 @@ namespace LayOut_Wall_i
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox8.Image = global::LayOut_Wall_i.Resources.Navy;
+            this.pictureBox8.Image = global::LayOut_Wall_i.Resources.Starlight_Black_SLAB_web4;
             this.pictureBox8.Location = new System.Drawing.Point(-3, 501);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(689, 38);
@@ -192,10 +180,10 @@ namespace LayOut_Wall_i
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Aqua;
-            this.pictureBox1.Image = global::LayOut_Wall_i.Resources.Robo3;
-            this.pictureBox1.Location = new System.Drawing.Point(99, 96);
+            this.pictureBox1.Image = global::LayOut_Wall_i.Properties.Resources.Robo;
+            this.pictureBox1.Location = new System.Drawing.Point(107, 155);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(490, 443);
+            this.pictureBox1.Size = new System.Drawing.Size(482, 436);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -204,11 +192,10 @@ namespace LayOut_Wall_i
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aqua;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(684, 537);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.btnWeer);
@@ -224,7 +211,6 @@ namespace LayOut_Wall_i
             this.Load += new System.EventHandler(this.BeginschermWalli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -247,7 +233,6 @@ namespace LayOut_Wall_i
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnWeer;
-        private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
     }
