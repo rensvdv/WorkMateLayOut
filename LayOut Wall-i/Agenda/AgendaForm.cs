@@ -84,6 +84,7 @@ namespace LayOut_Wall_i
         {
             lbxAfspraken.Items.Clear();
             agenda.Afspraken.Clear();
+            agenda.HaalAfsprakenOp();
             if (agenda.Afspraken.Count > 0)
             {
                 foreach (var afspraak in agenda.Afspraken)

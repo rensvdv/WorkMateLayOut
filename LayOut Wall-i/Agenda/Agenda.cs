@@ -25,12 +25,13 @@ namespace LayOut_Wall_i.Agenda
             this.Docent = docent;
             this.Lokaal = lokaal;
             this.Vak = vak;
+            this.DatabaseCon = new DatabaseConnectie();
         }
 
         public void HaalAfsprakenOp()
         {
             this.DatabaseCon.Connect();
-            string query = "SELECT * FROM Afspraak WHERE Leerlingnummer = @Leerlingnummer OR Leerlingnummerverzender = @Leerlingnummer";
+            string query = "SELECT * FROM Afspraak WHERE Leerlingnummer = @Leerlingnummer OR LeerlingnummerVerz = @Leerlingnummer";
             SqlCommand command = new SqlCommand(query, this.DatabaseCon.conn);
             command.Parameters.AddWithValue("@Leerlingnummer", this.DeGebruiker.LeerlingNummer);
             SqlDataReader reader = command.ExecuteReader();
@@ -38,7 +39,7 @@ namespace LayOut_Wall_i.Agenda
             {
                 Afspraak afspraak = new Afspraak(
                     Convert.ToString(reader["Titel"]),
-                    Convert.ToInt32(reader["Tijd"]),
+                    Convert.ToInt32(reader["Tijd(uren)"]),
                     Convert.ToString(reader["Beschrijving"]));
                 this.Afspraken.Add(afspraak);
             }

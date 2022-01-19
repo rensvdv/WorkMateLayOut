@@ -13,7 +13,7 @@ namespace LayOut_Wall_i
     public partial class Inlogscherm : Form
     {
         DatabaseConnectie database = new DatabaseConnectie();
-        Gebruiker gebruiker;
+        Gebruiker gebruiker = new Gebruiker();
         public Inlogscherm()
         {
             InitializeComponent();
@@ -26,7 +26,6 @@ namespace LayOut_Wall_i
 
             lblVulGegevensIn.Parent = pbAchtergrondInlog;
             lblVulGegevensIn.BackColor = Color.Transparent;
-            gebruiker = new Gebruiker();
         }
 
         private void btnBackGameMenu_Click(object sender, EventArgs e)
@@ -40,24 +39,32 @@ namespace LayOut_Wall_i
         {
             string emailInput = tbxEmail.Text;
             string wwInput = tbxWachtwoord.Text;
+            string gbEmail = "";
+            string gbWw = "";
 
             database.Inloggen(emailInput, wwInput, gebruiker);
 
-            //trim de database gegevens, want er komen spaties achter de rijen
-            string gbEmail = gebruiker.Email.Trim();
-            string gbWw = gebruiker.Email.Trim();
-
-            if (gbEmail == emailInput && gbWw == wwInput && gebruiker.Ingelogd)
+            //checken of email en ww niet null zijn
+            if (gebruiker.Email != null && gebruiker.Wachtwoord != null)
+            {
+                //trim de database gegevens, want er komen spaties achter de rijen
+                gbEmail = gebruiker.Email.Trim();
+                gbWw = gebruiker.Wachtwoord.Trim();
+            }
+            if (gbEmail == emailInput && gbWw == wwInput)
             {
                 //als inloggegevens kloppen door naar volgende form
+                MessageBox.Show("Goed ingelogd!");
                 BeginschermNaInloggen overzicht = new BeginschermNaInloggen(gebruiker);
                 this.Hide();
                 overzicht.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Uw email/wachtwoord komt niet overeen.");
+                MessageBox.Show("Uw email/wachtwoord komen niet overeen.");
             }
+
+
         }
     }
 }
