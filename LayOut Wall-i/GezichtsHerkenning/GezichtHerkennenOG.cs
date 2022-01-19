@@ -31,11 +31,17 @@ namespace LayOut_Wall_i
         string personPicPath;
 
         //string array van foto's waar personen instaan voor de verificatie
-        String[] picsPath = { @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\foto.png",
-                @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Mark.jpg",
-                @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\NietMark.jpg",
-                @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\JohnCena.jpg",
-               };
+        String[] picsPath = { Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Rens1.png"),
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Rens2.jpg"),
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Rowy1.png"),
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Rowy2.png"),
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Thor1.png"),
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Thor2.png"),
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Cezar1.png"),
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Cezar2.png"),
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Zaka.jpg")
+            };
+
         public GezichtHerkennenOG()
         {
             InitializeComponent();
@@ -55,7 +61,7 @@ namespace LayOut_Wall_i
         {
             Opslaan();
             //string van de foto die gemaakt is met de webcam
-            personPicPath = @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Foto" + count.ToString() + ".png";
+            personPicPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Foto" + count.ToString() + ".png");
 
             string naam = "a";
             count++;
@@ -126,7 +132,7 @@ namespace LayOut_Wall_i
             pbScreenshot.Image = (Bitmap)pbCamera.Image.Clone();
             //foto uit picturebox halen en opslaan naar interne opslag
             Bitmap varBmp = new Bitmap(pbScreenshot.Image);
-            varBmp.Save(@"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Foto" + count + ".png");
+            varBmp.Save(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Foto" + count.ToString() + ".png"));
 
             //foto disposen voor minder geheugen verbruik
             varBmp.Dispose();
@@ -136,7 +142,7 @@ namespace LayOut_Wall_i
         {
             Opslaan();
             //foto inladen en herkennen met face api
-            file = new FileStream(@"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Foto" + count.ToString() + ".png", FileMode.Open);
+            file = new FileStream(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Foto" + count.ToString() + ".png"), FileMode.Open);
 
             try
             {
