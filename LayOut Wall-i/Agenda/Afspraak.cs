@@ -76,9 +76,8 @@ namespace LayOut_Wall_i.Agenda
             if (ValideLengte(this.Beschrijving, 40) && BestaandeOntvanger() && ValideLengte(this.Titel, 20))
             {
                 this.DatabaseCon.Connect();
-                string query = "INSERT INTO Afspraak(AfspraakID,Leerlingnummer,Titel,[Tijd(uren)],Beschrijving,LeerlingnummerVerz) VALUES(@AfspraakID,@Leerlingnummer,@Titel,@Tijd,@Beschrijving,@Leerlingnummerverzender)";
+                string query = "INSERT INTO Afspraak(Leerlingnummer,Titel,[Tijd(uren)],Beschrijving,LeerlingnummerVerz) VALUES(@Leerlingnummer,@Titel,@Tijd,@Beschrijving,@Leerlingnummerverzender)";
                 SqlCommand command = new SqlCommand(query, this.DatabaseCon.conn);
-                command.Parameters.AddWithValue("@AfspraakID", 20);
                 command.Parameters.AddWithValue("@Leerlingnummer", this.Ontvanger.LeerlingNummer);
                 command.Parameters.AddWithValue("@Titel", this.Titel);
                 command.Parameters.AddWithValue("@Tijd", this.Tijd);

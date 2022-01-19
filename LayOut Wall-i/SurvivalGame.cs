@@ -18,6 +18,7 @@ namespace LayOut_Wall_i
         public SurvivalGame()
         {
             InitializeComponent();
+            btnTerug.Enabled = true;
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
@@ -87,6 +88,13 @@ namespace LayOut_Wall_i
                     lbxLeaderBoard.Items.Add($"{scor[0]} \t        {scor[1]} \t         {scor[2]}");
                 }
             }
+        }
+
+        private void btnTerug_Click(object sender, EventArgs e)
+        {
+            GameMenuOG game = new GameMenuOG();
+            this.Hide();
+            game.ShowDialog();
         }
     }
 }

@@ -47,6 +47,7 @@ namespace LayOut_Wall_i
             this.lbPlayernaam = new System.Windows.Forms.Label();
             this.tbNaam = new System.Windows.Forms.TextBox();
             this.pbCharacter = new System.Windows.Forms.PictureBox();
+            this.btnTerug = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.gbCharacters.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCharacter)).BeginInit();
@@ -241,13 +242,28 @@ namespace LayOut_Wall_i
             this.pbCharacter.TabIndex = 17;
             this.pbCharacter.TabStop = false;
             // 
+            // btnTerug
+            // 
+            this.btnTerug.BackColor = System.Drawing.Color.Moccasin;
+            this.btnTerug.Enabled = false;
+            this.btnTerug.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTerug.ForeColor = System.Drawing.Color.Black;
+            this.btnTerug.Location = new System.Drawing.Point(16, 12);
+            this.btnTerug.Name = "btnTerug";
+            this.btnTerug.Size = new System.Drawing.Size(153, 47);
+            this.btnTerug.TabIndex = 23;
+            this.btnTerug.Text = "Terug";
+            this.btnTerug.UseVisualStyleBackColor = false;
+            this.btnTerug.Click += new System.EventHandler(this.btnTerug_Click);
+            // 
             // SurvivalGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1122, 646);
+            this.ClientSize = new System.Drawing.Size(1122, 602);
+            this.Controls.Add(this.btnTerug);
             this.Controls.Add(this.lbxLeaderBoard);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.btnSaveName);
@@ -288,5 +304,6 @@ namespace LayOut_Wall_i
         private System.Windows.Forms.PictureBox pbCharacter;
         private System.Windows.Forms.Label lbPlayernaam;
         private System.Windows.Forms.TextBox tbNaam;
+        private System.Windows.Forms.Button btnTerug;
     }
 }

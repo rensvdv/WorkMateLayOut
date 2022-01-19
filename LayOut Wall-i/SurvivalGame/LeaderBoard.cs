@@ -13,7 +13,7 @@ namespace LayOut_Wall_i
         public List<Speler> SpelerScores { get; set; } = new List<Speler>();
         public LeaderBoard()
         {
-            this.Scores = File.ReadAllLines(@"C:\Users\zessa\source\repos\Speech_Recognition\Speech_Recognition\Scores.txt").ToList();
+            this.Scores = File.ReadAllLines(@"C:\Users\zessa\Desktop\Git\WorkMateLayOut\LayOut Wall-i\Scores.txt").ToList();
         }
 
         public void VoegSpelerToe(Speler speler)

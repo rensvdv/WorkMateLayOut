@@ -31,10 +31,10 @@ namespace LayOut_Wall_i
         string personPicPath;
 
         //string array van foto's waar personen instaan voor de verificatie
-        String[] picsPath = { @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\foto.png",
-                @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Mark.jpg",
-                @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\NietMark.jpg",
-                @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\JohnCena.jpg",
+        String[] picsPath = { @"C:\Users\zessa\Desktop\Fotos\foto.png",
+                @"C:\Users\zessa\Desktop\Fotos\Mark.jpg",
+                @"C:\Users\zessa\Desktop\Fotos\NietMark.jpg",
+                @"C:\Users\zessa\Desktop\Fotos\JohnCena.jpg",
                };
         public GezichtHerkennenOG()
         {
@@ -55,7 +55,7 @@ namespace LayOut_Wall_i
         {
             Opslaan();
             //string van de foto die gemaakt is met de webcam
-            personPicPath = @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Foto" + count.ToString() + ".png";
+            personPicPath = @"C:\Users\zessa\Desktop\FaceRec\Foto" + count.ToString() + ".png";
 
             string naam = "a";
             count++;
@@ -126,7 +126,7 @@ namespace LayOut_Wall_i
             pbScreenshot.Image = (Bitmap)pbCamera.Image.Clone();
             //foto uit picturebox halen en opslaan naar interne opslag
             Bitmap varBmp = new Bitmap(pbScreenshot.Image);
-            varBmp.Save(@"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Foto" + count + ".png");
+            varBmp.Save(@"C:\Users\zessa\Desktop\FaceRec\Foto" + count + ".png");
 
             //foto disposen voor minder geheugen verbruik
             varBmp.Dispose();
@@ -136,7 +136,7 @@ namespace LayOut_Wall_i
         {
             Opslaan();
             //foto inladen en herkennen met face api
-            file = new FileStream(@"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Foto" + count.ToString() + ".png", FileMode.Open);
+            file = new FileStream(@"C:\Users\zessa\Desktop\FaceRec\Foto" + count.ToString() + ".png", FileMode.Open);
 
             try
             {
