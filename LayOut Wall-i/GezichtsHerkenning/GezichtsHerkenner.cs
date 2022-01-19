@@ -137,7 +137,7 @@ namespace LayOut_Wall_i
             bool verificatie = false;
             Random rnd = new Random();
             //maakt randomgroep naam aan, want je kan niet 2x dezelfde naam hebben
-            string groupname = "z" + rnd.Next(1, 900000).ToString();
+            string groupname = "x" + rnd.Next(1, 900000).ToString();
 
             //maakt een lege persongroup
             Console.WriteLine("voorbereiden...");
