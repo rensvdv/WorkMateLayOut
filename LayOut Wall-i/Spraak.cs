@@ -21,8 +21,8 @@ namespace HetWeer
         {
             speechRec = new SpeechRecognitionEngine();
             speechSynth.SelectVoiceByHints(VoiceGender.Male);
-            this.Keuzes = File.ReadAllLines(@"C:\Users\zessa\Desktop\Speech_Recognition\Speech_Recognition\Vragen.txt").ToList();
-            this.Antwoorden = File.ReadAllLines(@"C:\Users\zessa\Desktop\Speech_Recognition\Speech_Recognition\Antwoorden.txt").ToList();
+            this.Keuzes = File.ReadAllLines(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Vragen.txt")).ToList();
+            this.Antwoorden = File.ReadAllLines(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Antwoorden.txt")).ToList();
             Choices commandos = new Choices();
             commandos.Add(this.Keuzes.ToArray());
             GrammarBuilder grBuilder = new GrammarBuilder();
@@ -94,8 +94,8 @@ namespace HetWeer
                 this.Antwoorden.Add(antwoordt);
                 speechSynth.SpeakAsync("question and answer are added to choices");
             }
-            File.WriteAllLines(@"C:\Users\zessa\Desktop\Speech_Recognition\Speech_Recognition\Vragen.txt", this.Keuzes);
-            File.WriteAllLines(@"C:\Users\zessa\Desktop\Speech_Recognition\Speech_Recognition\Antwoorden.txt", this.Antwoorden);
+            File.WriteAllLines(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Vragen.txt"), this.Keuzes);
+            File.WriteAllLines(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Antwoorden.txt"), this.Antwoorden);
         }
     }
 

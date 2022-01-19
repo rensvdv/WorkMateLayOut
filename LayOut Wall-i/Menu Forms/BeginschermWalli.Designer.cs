@@ -33,23 +33,19 @@ namespace LayOut_Wall_i
             this.btnGames = new System.Windows.Forms.Button();
             this.btnInlog = new System.Windows.Forms.Button();
             this.btnWeer = new System.Windows.Forms.Button();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -75,7 +71,7 @@ namespace LayOut_Wall_i
             this.btnInlog.BackColor = System.Drawing.Color.DarkGreen;
             this.btnInlog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInlog.ForeColor = System.Drawing.Color.White;
-            this.btnInlog.Location = new System.Drawing.Point(539, 451);
+            this.btnInlog.Location = new System.Drawing.Point(537, 451);
             this.btnInlog.Name = "btnInlog";
             this.btnInlog.Size = new System.Drawing.Size(103, 44);
             this.btnInlog.TabIndex = 4;
@@ -96,20 +92,32 @@ namespace LayOut_Wall_i
             this.btnWeer.UseVisualStyleBackColor = false;
             this.btnWeer.Click += new System.EventHandler(this.btnWeer_Click_1);
             // 
-            // pictureBox11
+            // pictureBox7
             // 
-            this.pictureBox11.Image = global::LayOut_Wall_i.Properties.Resources.Hi;
-            this.pictureBox11.Location = new System.Drawing.Point(150, 253);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 26;
-            this.pictureBox11.TabStop = false;
+            this.pictureBox7.BackColor = System.Drawing.Color.Blue;
+            this.pictureBox7.Image = global::LayOut_Wall_i.Resources.Starlight_Black_SLAB_web4;
+            this.pictureBox7.Location = new System.Drawing.Point(646, 29);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(40, 478);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 28;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Blue;
+            this.pictureBox6.Image = global::LayOut_Wall_i.Resources.Starlight_Black_SLAB_web4;
+            this.pictureBox6.Location = new System.Drawing.Point(-3, 29);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(40, 478);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 27;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Black;
-            this.pictureBox3.Image = global::LayOut_Wall_i.Resources.Starlight_Black_SLAB_web;
+            this.pictureBox3.Image = global::LayOut_Wall_i.Resources.Starlight_Black_SLAB_web4;
             this.pictureBox3.Location = new System.Drawing.Point(-3, 0);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(689, 40);
@@ -120,46 +128,13 @@ namespace LayOut_Wall_i
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox8.Image = global::LayOut_Wall_i.Resources.Starlight_Black_SLAB_web3;
+            this.pictureBox8.Image = global::LayOut_Wall_i.Resources.Starlight_Black_SLAB_web4;
             this.pictureBox8.Location = new System.Drawing.Point(-3, 501);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(689, 38);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 23;
             this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Black;
-            this.pictureBox7.Image = global::LayOut_Wall_i.Resources.stars_universe;
-            this.pictureBox7.Location = new System.Drawing.Point(648, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(38, 539);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 15;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Black;
-            this.pictureBox6.Image = global::LayOut_Wall_i.Resources.stars_universe;
-            this.pictureBox6.Location = new System.Drawing.Point(-6, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(36, 539);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 14;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.HotPink;
-            this.pictureBox9.Image = global::LayOut_Wall_i.Resources.disco_ball_gif_17;
-            this.pictureBox9.Location = new System.Drawing.Point(260, 37);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(156, 152);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 25;
-            this.pictureBox9.TabStop = false;
             // 
             // pictureBox10
             // 
@@ -204,11 +179,11 @@ namespace LayOut_Wall_i
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.HotPink;
-            this.pictureBox1.Image = global::LayOut_Wall_i.Resources.WalliSplash2;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 117);
+            this.pictureBox1.BackColor = System.Drawing.Color.Aqua;
+            this.pictureBox1.Image = global::LayOut_Wall_i.Properties.Resources.Robo;
+            this.pictureBox1.Location = new System.Drawing.Point(107, 155);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(490, 443);
+            this.pictureBox1.Size = new System.Drawing.Size(482, 436);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -217,14 +192,12 @@ namespace LayOut_Wall_i
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.HotPink;
-            this.ClientSize = new System.Drawing.Size(679, 537);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox8);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(684, 537);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.btnWeer);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.btnInlog);
@@ -236,12 +209,10 @@ namespace LayOut_Wall_i
             this.Name = "BeginschermWalli";
             this.Text = "BeginschermWalli";
             this.Load += new System.EventHandler(this.BeginschermWalli_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -257,14 +228,12 @@ namespace LayOut_Wall_i
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnWeer;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
