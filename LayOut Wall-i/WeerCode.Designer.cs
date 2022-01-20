@@ -250,6 +250,7 @@ namespace HetWeer
             this.Controls.Add(this.pbAchtergrondWeer);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWolk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAchtergrondWeer)).EndInit();

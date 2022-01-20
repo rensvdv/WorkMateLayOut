@@ -150,5 +150,12 @@ namespace HetWeer
             this.Hide();
             ver.ShowDialog();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }

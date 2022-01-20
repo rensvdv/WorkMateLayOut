@@ -84,5 +84,12 @@ namespace LayOut_Wall_i
             this.Hide();
             sur.ShowDialog();
         }
+
+        private void GameMenuOG_Load(object sender, EventArgs e)
+        {
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }

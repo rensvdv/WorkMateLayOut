@@ -57,39 +57,39 @@ namespace LayOut_Wall_i
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Font = new System.Drawing.Font("Unispace", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(592, 513);
+            this.button1.Location = new System.Drawing.Point(1480, 896);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 32);
+            this.button1.Size = new System.Drawing.Size(239, 83);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Game..";
+            this.button1.Text = "ArenaGame";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Font = new System.Drawing.Font("Unispace", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(370, 513);
+            this.button2.Location = new System.Drawing.Point(928, 896);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 32);
+            this.button2.Size = new System.Drawing.Size(239, 83);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Game..";
+            this.button2.Text = "SurvivalGame";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Indigo;
-            this.button3.Font = new System.Drawing.Font("Unispace", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(155, 513);
+            this.button3.Location = new System.Drawing.Point(406, 896);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 32);
+            this.button3.Size = new System.Drawing.Size(239, 83);
             this.button3.TabIndex = 6;
-            this.button3.Text = "Game..";
+            this.button3.Text = "TurnBasedGame";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -98,7 +98,7 @@ namespace LayOut_Wall_i
             this.btnBackGameMenu.BackColor = System.Drawing.Color.Black;
             this.btnBackGameMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackGameMenu.ForeColor = System.Drawing.Color.Red;
-            this.btnBackGameMenu.Location = new System.Drawing.Point(12, 519);
+            this.btnBackGameMenu.Location = new System.Drawing.Point(12, 12);
             this.btnBackGameMenu.Name = "btnBackGameMenu";
             this.btnBackGameMenu.Size = new System.Drawing.Size(85, 59);
             this.btnBackGameMenu.TabIndex = 7;
@@ -109,9 +109,9 @@ namespace LayOut_Wall_i
             // pictureBox8
             // 
             this.pictureBox8.Image = global::LayOut_Wall_i.Properties.Resources.GameOn;
-            this.pictureBox8.Location = new System.Drawing.Point(664, 23);
+            this.pictureBox8.Location = new System.Drawing.Point(1574, 52);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(113, 63);
+            this.pictureBox8.Size = new System.Drawing.Size(187, 114);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 25;
             this.pictureBox8.TabStop = false;
@@ -119,9 +119,9 @@ namespace LayOut_Wall_i
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LayOut_Wall_i.Properties.Resources.SplashartTURNBASEGAME1;
-            this.pictureBox1.Location = new System.Drawing.Point(193, 237);
+            this.pictureBox1.Location = new System.Drawing.Point(406, 410);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(118, 44);
+            this.pictureBox1.Size = new System.Drawing.Size(291, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -130,18 +130,19 @@ namespace LayOut_Wall_i
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(183, 228);
+            this.pictureBox5.Location = new System.Drawing.Point(396, 401);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(138, 62);
+            this.pictureBox5.Size = new System.Drawing.Size(311, 140);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 22;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::LayOut_Wall_i.Properties.Resources.MijnGameSplash;
-            this.pictureBox4.Location = new System.Drawing.Point(627, 223);
+            this.pictureBox4.Location = new System.Drawing.Point(1456, 389);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(121, 49);
+            this.pictureBox4.Size = new System.Drawing.Size(293, 124);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
@@ -149,9 +150,9 @@ namespace LayOut_Wall_i
             // pictureBox2
             // 
             this.pictureBox2.Image = global::LayOut_Wall_i.Properties.Resources.ZakaGameSplash;
-            this.pictureBox2.Location = new System.Drawing.Point(406, 223);
+            this.pictureBox2.Location = new System.Drawing.Point(914, 398);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(123, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(304, 102);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -160,9 +161,10 @@ namespace LayOut_Wall_i
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.White;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(395, 214);
+            this.pictureBox7.Location = new System.Drawing.Point(903, 389);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(145, 67);
+            this.pictureBox7.Size = new System.Drawing.Size(326, 120);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 24;
             this.pictureBox7.TabStop = false;
             // 
@@ -170,9 +172,10 @@ namespace LayOut_Wall_i
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(617, 214);
+            this.pictureBox6.Location = new System.Drawing.Point(1447, 380);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(142, 67);
+            this.pictureBox6.Size = new System.Drawing.Size(314, 142);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 23;
             this.pictureBox6.TabStop = false;
             // 
@@ -180,9 +183,9 @@ namespace LayOut_Wall_i
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Aqua;
             this.pictureBox3.Image = global::LayOut_Wall_i.Resources.Arcade;
-            this.pictureBox3.Location = new System.Drawing.Point(-175, -116);
+            this.pictureBox3.Location = new System.Drawing.Point(-485, -169);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1061, 724);
+            this.pictureBox3.Size = new System.Drawing.Size(2560, 1233);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -192,7 +195,7 @@ namespace LayOut_Wall_i
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(879, 590);
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox5);
@@ -208,6 +211,7 @@ namespace LayOut_Wall_i
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "GameMenuOG";
             this.Text = "GameMenuOG";
+            this.Load += new System.EventHandler(this.GameMenuOG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

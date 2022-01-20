@@ -74,6 +74,9 @@ namespace LayOut_Wall_i
         private void BeginschermWalli_Load(object sender, EventArgs e)
         {
             InitializeComponent();
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnGames_Click_1(object sender, EventArgs e)
