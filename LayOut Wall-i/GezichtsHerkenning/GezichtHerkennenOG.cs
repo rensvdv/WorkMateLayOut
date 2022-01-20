@@ -61,8 +61,7 @@ namespace LayOut_Wall_i
         {
             Opslaan();
             //string van de foto die gemaakt is met de webcam
-            personPicPath = @"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Foto" + count.ToString() + ".png";
-
+            personPicPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Foto" + count.ToString()+".png");
             string naam = "a";
             count++;
             try
