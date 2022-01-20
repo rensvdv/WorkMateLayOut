@@ -73,6 +73,7 @@ namespace LayOut_Wall_i
             this.lbVerhaal3 = new System.Windows.Forms.Label();
             this.lbVerhaal2 = new System.Windows.Forms.Label();
             this.lbVerhaal1 = new System.Windows.Forms.Label();
+            this.btnTerug = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRight2)).BeginInit();
@@ -556,11 +557,25 @@ namespace LayOut_Wall_i
             this.lbVerhaal1.Size = new System.Drawing.Size(0, 20);
             this.lbVerhaal1.TabIndex = 171;
             // 
+            // btnTerug
+            // 
+            this.btnTerug.BackColor = System.Drawing.Color.Black;
+            this.btnTerug.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTerug.ForeColor = System.Drawing.Color.Red;
+            this.btnTerug.Location = new System.Drawing.Point(12, 625);
+            this.btnTerug.Name = "btnTerug";
+            this.btnTerug.Size = new System.Drawing.Size(112, 67);
+            this.btnTerug.TabIndex = 177;
+            this.btnTerug.Text = "🠔";
+            this.btnTerug.UseVisualStyleBackColor = false;
+            this.btnTerug.Click += new System.EventHandler(this.btnTerug_Click);
+            // 
             // ArenaGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 704);
+            this.Controls.Add(this.btnTerug);
             this.Controls.Add(this.lbVerhaal6);
             this.Controls.Add(this.lbVerhaal5);
             this.Controls.Add(this.lbVerhaal4);
@@ -673,5 +688,6 @@ namespace LayOut_Wall_i
         private System.Windows.Forms.Label lbVerhaal3;
         private System.Windows.Forms.Label lbVerhaal2;
         private System.Windows.Forms.Label lbVerhaal1;
+        private System.Windows.Forms.Button btnTerug;
     }
 }

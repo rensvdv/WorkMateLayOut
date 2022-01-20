@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HetWeer;
 
 namespace LayOut_Wall_i
 {
@@ -18,7 +19,6 @@ namespace LayOut_Wall_i
         bool turn = false;
 
         Random RandomKaart = new Random();
-
         List<Kaart> kaarten = new List<Kaart>();
 
         public ArenaGame()
@@ -255,6 +255,13 @@ namespace LayOut_Wall_i
             player2.WinstOfVerlies(player1);
 
             BtnAanUit();
+        }
+
+        private void btnTerug_Click(object sender, EventArgs e)
+        {
+            GameMenuOG game = new GameMenuOG();
+            this.Hide();
+            game.ShowDialog();
         }
     }
 }
