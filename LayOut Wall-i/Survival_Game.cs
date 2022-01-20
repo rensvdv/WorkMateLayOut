@@ -28,17 +28,6 @@ namespace LayOut_Wall_i
             timer1.Start();
         }
 
-        private void Survival_Game_Load(object sender, EventArgs e)
-        {
-            prBarPlayer.Maximum = speler.Leven;
-            prBarPlayer.Value = speler.Leven;
-            tbNaam.Text = speler.PlayerNaam;
-            lbKogels.Text = $"Kogels: {speler.Kogels}";
-            lbLeven.Text = $"Leven: {speler.Leven}";
-            pbSpeler.Image = playerPic.Image;
-            pbSpeler.SizeMode = PictureBoxSizeMode.Zoom;
-        }
-
         private void PrBarChange(Speler player)
         {
             if (player.Leven > 0)
@@ -61,36 +50,7 @@ namespace LayOut_Wall_i
             this.Hide();
             sur.ShowDialog();
         }
-        private void Survival_Game_KeyDown(object sender, KeyEventArgs e)
-        {
-            switch (e.KeyCode)
-            {
-                case Keys.Left:
-                    pbSpeler.Left -= speler.BewegingSnelheid;
-                    break;
-                case Keys.Right:
-                    pbSpeler.Left += speler.BewegingSnelheid;
-                    break;
-                case Keys.Up:
-                    pbSpeler.Top -= speler.BewegingSnelheid;
-                    break;
-                case Keys.Down:
-                    pbSpeler.Top += speler.BewegingSnelheid;
-                    break;
-                case Keys.Space:
-                    AttackEnemy();
-                    break;
-            }
-            MunitieBijvullen();
-            if (EnemyHit(pbSpeler))
-            {
-                enemy.GiveDamage(speler);
-                PrBarChange(speler);
-            }
-            lbScore.Text = $"Score: {speler.Score}";
-            lbKogels.Text = $"Kogels: {speler.Kogels}";
-            lbEnemyKills.Text = $"EnemyKills: {speler.EnemyCount}";
-        }
+
         private bool EnemyHit(PictureBox pic)
         {
             bool check = false;
@@ -190,7 +150,18 @@ namespace LayOut_Wall_i
             pbSpeler.BringToFront();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void Survival_Game_Load_1(object sender, EventArgs e)
+        {
+            prBarPlayer.Maximum = speler.Leven;
+            prBarPlayer.Value = speler.Leven;
+            tbNaam.Text = speler.PlayerNaam;
+            lbKogels.Text = $"Kogels: {speler.Kogels}";
+            lbLeven.Text = $"Leven: {speler.Leven}";
+            pbSpeler.Image = playerPic.Image;
+            pbSpeler.SizeMode = PictureBoxSizeMode.Zoom;
+        }
+
+        private void Timer_Tick_1(object sender, EventArgs e)
         {
             tijd++;
             lbTijd.Text = $"Tijd: {tijd}";
@@ -207,7 +178,7 @@ namespace LayOut_Wall_i
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick_1(object sender, EventArgs e)
         {
             if (enemy != null)
             {
@@ -217,6 +188,37 @@ namespace LayOut_Wall_i
                 lbLeven.Text = $"Leven: {speler.Leven}";
                 lbEnemy.Text = enemy.ToString();
             }
+        }
+
+        private void Survival_Game_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Left:
+                    pbSpeler.Left -= speler.BewegingSnelheid;
+                    break;
+                case Keys.Right:
+                    pbSpeler.Left += speler.BewegingSnelheid;
+                    break;
+                case Keys.Up:
+                    pbSpeler.Top -= speler.BewegingSnelheid;
+                    break;
+                case Keys.Down:
+                    pbSpeler.Top += speler.BewegingSnelheid;
+                    break;
+                case Keys.Space:
+                    AttackEnemy();
+                    break;
+            }
+            MunitieBijvullen();
+            if (EnemyHit(pbSpeler))
+            {
+                enemy.GiveDamage(speler);
+                PrBarChange(speler);
+            }
+            lbScore.Text = $"Score: {speler.Score}";
+            lbKogels.Text = $"Kogels: {speler.Kogels}";
+            lbEnemyKills.Text = $"EnemyKills: {speler.EnemyCount}";
         }
     }
 }

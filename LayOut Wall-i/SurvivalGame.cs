@@ -21,23 +21,54 @@ namespace LayOut_Wall_i
             btnTerug.Enabled = true;
         }
 
-        private void btnSignIn_Click(object sender, EventArgs e)
+        private void CharacterStats(Speler player)
         {
-            Survival_Game sur = new Survival_Game(speler, pbCharacter);
-            this.Hide();
-            sur.ShowDialog();
+            lbLeven.Text = $"Leven: {player.Leven}";
+            lbDamage.Text = $"Damage: {player.Damage}";
+            lbMovement.Text = $"Movement: {player.BewegingSnelheid}";
+            lbBullets.Text = $"Bullets: {player.Kogels}";
         }
 
-        private void btnSaveName_Click(object sender, EventArgs e)
+        private void btnTerug_Click(object sender, EventArgs e)
+        {
+            GameMenuOG game = new GameMenuOG();
+            this.Hide();
+            game.ShowDialog();
+        }
+
+        private void btnSaveName_Click_1(object sender, EventArgs e)
         {
             naam = tbNaam.Text.Replace(" ", "-");
             if (naam != "")
             {
                 gbCharacters.Enabled = true;
             }
-
         }
-        private void ChangeRbtn(object sender, EventArgs e)
+
+        private void btnSignIn_Click_1(object sender, EventArgs e)
+        {
+            Survival_Game sur = new Survival_Game(speler, pbCharacter);
+            this.Hide();
+            sur.ShowDialog();
+        }
+
+        private void SurvivalGame_Load(object sender, EventArgs e)
+        {
+            foreach (string score in lb.Scores)
+            {
+                string[] scor = score.Split(' ');
+                if (scor.Length != 3)
+                {
+                    lbxLeaderBoard.Items.Add(score);
+                }
+                else
+                {
+                    lbxLeaderBoard.Items.Add($"{scor[0]} \t        {scor[1]} \t         {scor[2]}");
+                }
+            }
+        }
+
+        private void rbtnCatWoman_CheckedChanged(object sender, EventArgs e)
         {
             btnSignIn.Enabled = true;
             if (rbtnMonkey.Checked)
@@ -64,37 +95,6 @@ namespace LayOut_Wall_i
                 speler = new Speler(naam, 110, 30, 15, 6, Speler.PowerAttack.SuperDuper);
                 CharacterStats(speler);
             }
-        }
-
-        private void CharacterStats(Speler player)
-        {
-            lbLeven.Text = $"Leven: {player.Leven}";
-            lbDamage.Text = $"Damage: {player.Damage}";
-            lbMovement.Text = $"Movement: {player.BewegingSnelheid}";
-            lbBullets.Text = $"Bullets: {player.Kogels}";
-        }
-
-        private void Survival_Load(object sender, EventArgs e)
-        {
-            foreach (string score in lb.Scores)
-            {
-                string[] scor = score.Split(' ');
-                if (scor.Length != 3)
-                {
-                    lbxLeaderBoard.Items.Add(score);
-                }
-                else
-                {
-                    lbxLeaderBoard.Items.Add($"{scor[0]} \t        {scor[1]} \t         {scor[2]}");
-                }
-            }
-        }
-
-        private void btnTerug_Click(object sender, EventArgs e)
-        {
-            GameMenuOG game = new GameMenuOG();
-            this.Hide();
-            game.ShowDialog();
         }
     }
 }

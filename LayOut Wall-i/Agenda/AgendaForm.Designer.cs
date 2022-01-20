@@ -62,10 +62,10 @@ namespace LayOut_Wall_i
             this.grpbxKleineAfspraak = new System.Windows.Forms.GroupBox();
             this.tbBeschrijving = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.datePicker = new System.Windows.Forms.DateTimePicker();
             this.lbVak2 = new System.Windows.Forms.Label();
             this.lbDatum3 = new System.Windows.Forms.Label();
             this.lbNaam = new System.Windows.Forms.Label();
-            this.datePicker = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pbAchtergrond)).BeginInit();
             this.grpbxKleineAfspraak.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -295,9 +295,9 @@ namespace LayOut_Wall_i
             this.lbAfspraaksduur.ForeColor = System.Drawing.Color.Blue;
             this.lbAfspraaksduur.Location = new System.Drawing.Point(34, 272);
             this.lbAfspraaksduur.Name = "lbAfspraaksduur";
-            this.lbAfspraaksduur.Size = new System.Drawing.Size(100, 17);
+            this.lbAfspraaksduur.Size = new System.Drawing.Size(139, 17);
             this.lbAfspraaksduur.TabIndex = 29;
-            this.lbAfspraaksduur.Text = "Afspraaksduur";
+            this.lbAfspraaksduur.Text = "Afspraaksduur(uren)";
             // 
             // lbDatum2
             // 
@@ -390,7 +390,7 @@ namespace LayOut_Wall_i
             this.grpbxKleineAfspraak.Size = new System.Drawing.Size(208, 370);
             this.grpbxKleineAfspraak.TabIndex = 38;
             this.grpbxKleineAfspraak.TabStop = false;
-            this.grpbxKleineAfspraak.Text = "KleineAfspraak";
+            this.grpbxKleineAfspraak.Text = "Korte afspraak";
             // 
             // tbBeschrijving
             // 
@@ -410,7 +410,14 @@ namespace LayOut_Wall_i
             this.groupBox1.Size = new System.Drawing.Size(251, 370);
             this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "GroteAfspraak";
+            this.groupBox1.Text = "Grote afspraak";
+            // 
+            // datePicker
+            // 
+            this.datePicker.Location = new System.Drawing.Point(36, 301);
+            this.datePicker.Name = "datePicker";
+            this.datePicker.Size = new System.Drawing.Size(186, 22);
+            this.datePicker.TabIndex = 37;
             // 
             // lbVak2
             // 
@@ -443,13 +450,6 @@ namespace LayOut_Wall_i
             this.lbNaam.Size = new System.Drawing.Size(75, 20);
             this.lbNaam.TabIndex = 43;
             this.lbNaam.Text = "Welkom";
-            // 
-            // datePicker
-            // 
-            this.datePicker.Location = new System.Drawing.Point(36, 301);
-            this.datePicker.Name = "datePicker";
-            this.datePicker.Size = new System.Drawing.Size(186, 22);
-            this.datePicker.TabIndex = 37;
             // 
             // AgendaForm
             // 

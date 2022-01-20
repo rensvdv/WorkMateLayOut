@@ -77,6 +77,7 @@ namespace LayOut_Wall_i
             this.btnSignIn.TabIndex = 20;
             this.btnSignIn.Text = "Play";
             this.btnSignIn.UseVisualStyleBackColor = false;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click_1);
             // 
             // lbBullets
             // 
@@ -125,6 +126,7 @@ namespace LayOut_Wall_i
             this.btnSaveName.TabIndex = 21;
             this.btnSaveName.Text = "Save Name";
             this.btnSaveName.UseVisualStyleBackColor = false;
+            this.btnSaveName.Click += new System.EventHandler(this.btnSaveName_Click_1);
             // 
             // groupBox1
             // 
@@ -179,6 +181,7 @@ namespace LayOut_Wall_i
             this.rbtnCatWoman.TabStop = true;
             this.rbtnCatWoman.Text = "Cat Woman";
             this.rbtnCatWoman.UseVisualStyleBackColor = true;
+            this.rbtnCatWoman.CheckedChanged += new System.EventHandler(this.rbtnCatWoman_CheckedChanged);
             // 
             // rbtnSuperman
             // 
@@ -190,6 +193,7 @@ namespace LayOut_Wall_i
             this.rbtnSuperman.TabStop = true;
             this.rbtnSuperman.Text = "Superman";
             this.rbtnSuperman.UseVisualStyleBackColor = true;
+            this.rbtnSuperman.CheckedChanged += new System.EventHandler(this.rbtnCatWoman_CheckedChanged);
             // 
             // rbtnMonkey
             // 
@@ -201,6 +205,7 @@ namespace LayOut_Wall_i
             this.rbtnMonkey.TabStop = true;
             this.rbtnMonkey.Text = "Monkey";
             this.rbtnMonkey.UseVisualStyleBackColor = true;
+            this.rbtnMonkey.CheckedChanged += new System.EventHandler(this.rbtnCatWoman_CheckedChanged);
             // 
             // rbtnGorilla
             // 
@@ -212,6 +217,7 @@ namespace LayOut_Wall_i
             this.rbtnGorilla.TabStop = true;
             this.rbtnGorilla.Text = "Gorilla";
             this.rbtnGorilla.UseVisualStyleBackColor = true;
+            this.rbtnGorilla.CheckedChanged += new System.EventHandler(this.rbtnCatWoman_CheckedChanged);
             // 
             // lbPlayernaam
             // 
@@ -275,6 +281,7 @@ namespace LayOut_Wall_i
             this.Controls.Add(this.tbNaam);
             this.Name = "SurvivalGame";
             this.Text = "SurvivalGame";
+            this.Load += new System.EventHandler(this.SurvivalGame_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.gbCharacters.ResumeLayout(false);

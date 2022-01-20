@@ -98,6 +98,7 @@ namespace LayOut_Wall_i
             // Timer
             // 
             this.Timer.Interval = 1000;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick_1);
             // 
             // lbTijd
             // 
@@ -117,6 +118,10 @@ namespace LayOut_Wall_i
             this.pbSpeler.Size = new System.Drawing.Size(164, 167);
             this.pbSpeler.TabIndex = 14;
             this.pbSpeler.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // lbEnemyKills
             // 
@@ -156,6 +161,8 @@ namespace LayOut_Wall_i
             this.Controls.Add(this.lbEnemy);
             this.Name = "Survival_Game";
             this.Text = "Survival_Game";
+            this.Load += new System.EventHandler(this.Survival_Game_Load_1);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Survival_Game_KeyDown_1);
             ((System.ComponentModel.ISupportInitialize)(this.pbSpeler)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
