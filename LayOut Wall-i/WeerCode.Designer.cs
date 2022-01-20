@@ -37,7 +37,6 @@ namespace HetWeer
             this.label1 = new System.Windows.Forms.Label();
             this.btnVerwachting = new System.Windows.Forms.Button();
             this.lbWolken = new System.Windows.Forms.Label();
-            this.btnWolken = new System.Windows.Forms.Button();
             this.lblNederland = new System.Windows.Forms.Label();
             this.lbTemperatuur = new System.Windows.Forms.Label();
             this.lbVoeltAls = new System.Windows.Forms.Label();
@@ -134,16 +133,6 @@ namespace HetWeer
             this.lbWolken.TabIndex = 15;
             this.lbWolken.Text = "Wolken";
             // 
-            // btnWolken
-            // 
-            this.btnWolken.Location = new System.Drawing.Point(659, 201);
-            this.btnWolken.Name = "btnWolken";
-            this.btnWolken.Size = new System.Drawing.Size(109, 51);
-            this.btnWolken.TabIndex = 17;
-            this.btnWolken.Text = "Tonen";
-            this.btnWolken.UseVisualStyleBackColor = true;
-            this.btnWolken.Click += new System.EventHandler(this.button2_Click);
-            // 
             // lblNederland
             // 
             this.lblNederland.AutoSize = true;
@@ -237,7 +226,6 @@ namespace HetWeer
             this.Controls.Add(this.lbVoeltAls);
             this.Controls.Add(this.lbTemperatuur);
             this.Controls.Add(this.lblNederland);
-            this.Controls.Add(this.btnWolken);
             this.Controls.Add(this.pbWolk);
             this.Controls.Add(this.lbWolken);
             this.Controls.Add(this.btnVerwachting);
@@ -270,7 +258,6 @@ namespace HetWeer
         private System.Windows.Forms.Button btnVerwachting;
         private System.Windows.Forms.Label lbWolken;
         private System.Windows.Forms.PictureBox pbWolk;
-        private System.Windows.Forms.Button btnWolken;
         private System.Windows.Forms.Label lblNederland;
         private System.Windows.Forms.Label lbTemperatuur;
         private System.Windows.Forms.Label lbVoeltAls;

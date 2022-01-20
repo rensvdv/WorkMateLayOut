@@ -80,8 +80,8 @@ namespace HetWeer
             lblTilburg.Parent = pbAchtergrondWeer;
             lblTilburg.BackColor = Color.Transparent;
         }
-        private void button2_Click(object sender, EventArgs e)
-        { 
+        private void WeerTonen()
+        {
             XDocument bestand = XDocument.Load(api.Url);
             Weer weer = new Weer((double)bestand.Descendants("temp_c").FirstOrDefault(), (double)bestand.Descendants("feelslike_c").FirstOrDefault(), (double)bestand.Descendants("wind_kph").FirstOrDefault(), (double)bestand.Descendants("humidity").FirstOrDefault(), (string)bestand.Descendants("text").FirstOrDefault());
             string icoon = (string)bestand.Descendants("icon").FirstOrDefault();
@@ -97,8 +97,8 @@ namespace HetWeer
             lbHumiditeit.Text = $"{weer.Humiditeit} %";
             lbWolken.Text = weer.WeersVerwachting;
 
-            pbWolk.Image = icoon2;      
-            
+            pbWolk.Image = icoon2;
+
             Output();
         }
 
@@ -156,6 +156,7 @@ namespace HetWeer
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
             this.WindowState = FormWindowState.Maximized;
+            WeerTonen();
         }
     }
 }

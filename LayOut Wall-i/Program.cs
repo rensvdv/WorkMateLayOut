@@ -17,7 +17,7 @@ namespace LayOut_Wall_i
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TurnBasedGame.Form1());
+            Application.Run(new GezichtHerkennenOG());
         }
     }
 }
