@@ -1,0 +1,8 @@
+Playernaam | Score | EnemyCount
+----------------------------------------------
+Zakaria 227 13
+Cezar 89 5
+Kees 77 5
+Amier 44 3
+Sanders 12 23
+Ludo 12 12
