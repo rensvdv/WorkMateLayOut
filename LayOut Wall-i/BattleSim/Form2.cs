@@ -216,7 +216,9 @@ namespace TurnBasedGame
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void button1_Click(object sender, EventArgs e)
