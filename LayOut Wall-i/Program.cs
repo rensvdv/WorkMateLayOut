@@ -17,7 +17,7 @@ namespace LayOut_Wall_i
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GezichtHerkennenOG());
+            Application.Run(new BeginschermWalli());
         }
     }
 }

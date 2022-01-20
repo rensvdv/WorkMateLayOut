@@ -39,5 +39,12 @@ namespace LayOut_Wall_i
             this.Hide();
             agenda.ShowDialog();
         }
+
+        private void BeginschermNaInloggen_Load(object sender, EventArgs e)
+        {
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }
