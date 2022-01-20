@@ -33,3 +33,5 @@ starting up the game
 attacking the enemy
 attacking the enemy
 you will be healed
+survival game, will be opened
+arena game, will be opened

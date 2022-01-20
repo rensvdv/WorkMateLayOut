@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HetWeer;
+using System.Speech.Recognition;
 
 namespace TurnBasedGame
 {
@@ -15,10 +17,20 @@ namespace TurnBasedGame
     {
         Speler speler1;
         Speler speler2;
+        Spraak spraak = new Spraak();
         public Form1()
         {
             InitializeComponent();
-            
+            spraak.speechRec.SpeechRecognized += SpeechRecognized;
+        }
+
+        private void SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            if (e.Result.Text.Contains("back"))
+            {
+                spraak.Reageer(e.Result.Text);
+                btnSurvivalBack_Click(sender,e);
+            }
         }
 
         private void Speler1Selecteren()
@@ -79,6 +91,7 @@ namespace TurnBasedGame
         {
             //terug naar gameselect form
             GameMenuOG form = new GameMenuOG();
+            spraak.speechRec.RecognizeAsyncCancel();
             this.Hide();
             form.ShowDialog();
         }

@@ -73,6 +73,7 @@ namespace LayOut_Wall_i
             this.lbVerhaal3 = new System.Windows.Forms.Label();
             this.lbVerhaal2 = new System.Windows.Forms.Label();
             this.lbVerhaal1 = new System.Windows.Forms.Label();
+            this.btnBackGameMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRight2)).BeginInit();
@@ -556,11 +557,25 @@ namespace LayOut_Wall_i
             this.lbVerhaal1.Size = new System.Drawing.Size(0, 20);
             this.lbVerhaal1.TabIndex = 171;
             // 
+            // btnBackGameMenu
+            // 
+            this.btnBackGameMenu.BackColor = System.Drawing.Color.Black;
+            this.btnBackGameMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBackGameMenu.ForeColor = System.Drawing.Color.Red;
+            this.btnBackGameMenu.Location = new System.Drawing.Point(8, 633);
+            this.btnBackGameMenu.Name = "btnBackGameMenu";
+            this.btnBackGameMenu.Size = new System.Drawing.Size(123, 59);
+            this.btnBackGameMenu.TabIndex = 177;
+            this.btnBackGameMenu.Text = "🠔";
+            this.btnBackGameMenu.UseVisualStyleBackColor = false;
+            this.btnBackGameMenu.Click += new System.EventHandler(this.btnBackGameMenu_Click);
+            // 
             // ArenaGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 704);
+            this.Controls.Add(this.btnBackGameMenu);
             this.Controls.Add(this.lbVerhaal6);
             this.Controls.Add(this.lbVerhaal5);
             this.Controls.Add(this.lbVerhaal4);
@@ -673,5 +688,6 @@ namespace LayOut_Wall_i
         private System.Windows.Forms.Label lbVerhaal3;
         private System.Windows.Forms.Label lbVerhaal2;
         private System.Windows.Forms.Label lbVerhaal1;
+        private System.Windows.Forms.Button btnBackGameMenu;
     }
 }

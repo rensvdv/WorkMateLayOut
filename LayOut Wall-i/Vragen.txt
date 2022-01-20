@@ -33,3 +33,7 @@ start the game
 light attack
 heavy attack
 heal
+survival game
+arena game
+arcade
+login

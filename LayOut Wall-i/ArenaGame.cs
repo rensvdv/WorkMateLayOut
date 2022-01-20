@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Speech.Recognition;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HetWeer;
 
 namespace LayOut_Wall_i
 {
@@ -18,13 +20,13 @@ namespace LayOut_Wall_i
         bool turn = false;
 
         Random RandomKaart = new Random();
-
+        Spraak spraak = new Spraak();
         List<Kaart> kaarten = new List<Kaart>();
 
         public ArenaGame()
         {
             InitializeComponent();
-
+            spraak.speechRec.SpeechRecognized += SpeechRecognized;
             player1 = new Player("Cezar", Player.Karakter.Techneut);
             player2 = new Player("Zakria", Player.Karakter.Keizerin);
 
@@ -65,6 +67,15 @@ namespace LayOut_Wall_i
             lbVerhaal4.Parent = pbAchtergrond;
             lbVerhaal5.Parent = pbAchtergrond;
             lbVerhaal6.Parent = pbAchtergrond;
+        }
+
+        private void SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            if (e.Result.Text.Contains("back"))
+            {
+                spraak.Reageer(e.Result.Text);
+                btnBackGameMenu_Click(sender,e);
+            }
         }
 
         private void ZetAlleLabelAchtergrondenTransparant(Color color)
@@ -255,6 +266,14 @@ namespace LayOut_Wall_i
             player2.WinstOfVerlies(player1);
 
             BtnAanUit();
+        }
+
+        private void btnBackGameMenu_Click(object sender, EventArgs e)
+        {
+            GameMenuOG games = new GameMenuOG();
+            spraak.speechRec.RecognizeAsyncCancel();
+            this.Hide();
+            games.ShowDialog();
         }
     }
 }

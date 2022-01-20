@@ -12,6 +12,7 @@ using System.Xml.Linq;
 using System.IO;
 using System.Net;
 using LayOut_Wall_i;
+using System.Speech.Recognition;
 
 namespace HetWeer
 {
@@ -19,13 +20,13 @@ namespace HetWeer
     {
         Gebruiker gebruiker;
         Spraak spraak = new Spraak();
-
+        Spraak spraak2 = new Spraak();
         Weer api = new Weer("http://api.weatherapi.com/v1/current.xml?key=8fee798205ff4b0e965154533212311&q=Tilburg&aqi=yes");
         
         public Form1()
         {
             InitializeComponent();
-
+            spraak.speechRec.SpeechRecognized += SpeechRecognized;
             lbTemperatuur.Parent = pbAchtergrondWeer;
             lbTemperatuur.BackColor = Color.Transparent;
 
@@ -48,6 +49,55 @@ namespace HetWeer
 
             lblTilburg.Parent = pbAchtergrondWeer;
             lblTilburg.BackColor = Color.Transparent;
+        }
+
+        private void SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            if(e.Result.Text.Contains("today"))
+            {
+                spraak.Reageer(e.Result.Text);
+                button2_Click(sender,e);
+            }
+            if(e.Result.Text.Contains("upcomming"))
+            {
+                spraak.Reageer(e.Result.Text);
+                btnVerwachting_Click(sender,e);
+            }
+            if(e.Result.Text.Contains("read"))
+            {
+                spraak.Reageer(e.Result.Text);
+                Output();
+            }
+            if(e.Result.Text.Contains("back"))
+            {
+                spraak.Reageer(e.Result.Text);
+                button1_Click(sender,e);
+            }
+            if(e.Result.Text.Contains("stop listening"))
+            {
+                spraak.StopMetLuisteren(e.Result.Text);
+                if (spraak2 == null)
+                    spraak2.speechRec.SpeechRecognized += SpeechRecognized2;
+                else
+                    spraak2.StartMetLuisteren();
+            }
+            if(e.Result.Text.Contains("stop talking"))
+            {
+                spraak.StopMetPraten();
+            }
+            if(e.Result.Text.Contains("start talking"))
+            {
+                spraak.StartMetPraten();
+            }
+        }
+
+        private void SpeechRecognized2(object sender, SpeechRecognizedEventArgs e)
+        {
+            if(e.Result.Text.Contains("start"))
+            {
+                spraak.StartMetLuisteren();
+                spraak2.StopMetLuisteren(e.Result.Text);
+            }
         }
 
         //2e constructor om gebruiker mee te geven na inloggen
@@ -98,8 +148,6 @@ namespace HetWeer
             lbWolken.Text = weer.WeersVerwachting;
 
             pbWolk.Image = icoon2;      
-            
-            Output();
         }
 
         private void Output()
@@ -147,6 +195,7 @@ namespace HetWeer
         private void button1_Click(object sender, EventArgs e)
         {
             BeginschermWalli ver = new BeginschermWalli();
+            spraak.speechRec.RecognizeAsyncCancel();
             this.Hide();
             ver.ShowDialog();
         }

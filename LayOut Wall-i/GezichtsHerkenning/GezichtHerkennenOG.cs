@@ -132,7 +132,7 @@ namespace LayOut_Wall_i
             pbScreenshot.Image = (Bitmap)pbCamera.Image.Clone();
             //foto uit picturebox halen en opslaan naar interne opslag
             Bitmap varBmp = new Bitmap(pbScreenshot.Image);
-            varBmp.Save(@"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Foto" + count + ".png");
+            varBmp.Save(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Foto" + count.ToString() + ".png"));
 
             //foto disposen voor minder geheugen verbruik
             varBmp.Dispose();
@@ -142,7 +142,7 @@ namespace LayOut_Wall_i
         {
             Opslaan();
             //foto inladen en herkennen met face api
-            file = new FileStream(@"C:\Users\rensv\Desktop\School\Fontys\WorkMate\Software\Fotos\Foto" + count.ToString() + ".png", FileMode.Open);
+            file = new FileStream(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Workmate", "Fotos", "Foto" + count.ToString() + ".png"), FileMode.Open);
 
             try
             {

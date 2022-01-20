@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Speech.Recognition;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HetWeer;
 
 namespace LayOut_Wall_i
 {
@@ -15,10 +17,21 @@ namespace LayOut_Wall_i
         string naam;
         private Speler speler;
         private LeaderBoard lb = new LeaderBoard();
+        Spraak spraak = new Spraak();
         public SurvivalGame()
         {
             InitializeComponent();
             btnTerug.Enabled = true;
+            spraak.speechRec.SpeechRecognized += SpeechRecognized;
+        }
+
+        private void SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            if(e.Result.Text.Contains("back"))
+            {
+                spraak.Reageer(e.Result.Text);
+                btnTerug_Click(sender,e);
+            }
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
@@ -93,6 +106,7 @@ namespace LayOut_Wall_i
         private void btnTerug_Click(object sender, EventArgs e)
         {
             GameMenuOG game = new GameMenuOG();
+            spraak.speechRec.RecognizeAsyncCancel();
             this.Hide();
             game.ShowDialog();
         }
