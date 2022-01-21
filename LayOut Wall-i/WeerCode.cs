@@ -12,6 +12,7 @@ using System.Xml.Linq;
 using System.IO;
 using System.Net;
 using LayOut_Wall_i;
+using System.Speech.Recognition;
 
 namespace HetWeer
 {
@@ -26,17 +27,40 @@ namespace HetWeer
         {
             InitializeComponent();
             VeranderAchtergrond(Color.Transparent);
+            spraak.speechRec.SpeechRecognized += Recognized;
         }
 
         //2e constructor om gebruiker mee te geven na inloggen
         public Form1(Gebruiker gebruiker)
         {
             InitializeComponent();
-
             this.gebruiker = gebruiker;
             VeranderAchtergrond(Color.Transparent);
+            spraak.speechRec.SpeechRecognized += Recognized;
         }
 
+
+        private void Recognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            if(e.Result.Text.Contains("upcomming"))
+            {
+                spraak.Reageer(e.Result.Text);
+                btnVerwachting_Click(sender,e);
+            }
+            if(e.Result.Text.Contains("back"))
+            {
+                spraak.Reageer(e.Result.Text);
+                button1_Click(sender,e);
+            }
+            if(e.Result.Text == "stop talking")
+            {
+                spraak.StopMetPraten();
+            }
+            if(e.Result.Text == "start talking")
+            {
+                spraak.StartMetPraten();
+            }
+        }
         private void VeranderAchtergrond(Color color)
         {
             foreach (Control control in Controls)

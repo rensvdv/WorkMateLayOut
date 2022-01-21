@@ -121,6 +121,7 @@ namespace LayOut_Wall_i
             this.btnWeer.TabIndex = 51;
             this.btnWeer.Text = "Het Weer";
             this.btnWeer.UseVisualStyleBackColor = false;
+            this.btnWeer.Click += new System.EventHandler(this.btnWeer_Click);
             // 
             // pictureBox10
             // 
@@ -154,6 +155,7 @@ namespace LayOut_Wall_i
             this.btnGames.TabIndex = 42;
             this.btnGames.Text = "De Arcade";
             this.btnGames.UseVisualStyleBackColor = false;
+            this.btnGames.Click += new System.EventHandler(this.btnGames_Click);
             // 
             // pictureBox5
             // 

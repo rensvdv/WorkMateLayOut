@@ -66,6 +66,7 @@ namespace LayOut_Wall_i
             this.lbVak2 = new System.Windows.Forms.Label();
             this.lbDatum3 = new System.Windows.Forms.Label();
             this.lbNaam = new System.Windows.Forms.Label();
+            this.btnTerug = new System.Windows.Forms.Button();
             this.grpbxKleineAfspraak.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -461,6 +462,19 @@ namespace LayOut_Wall_i
             this.lbNaam.TabIndex = 43;
             this.lbNaam.Text = "Welkom";
             // 
+            // btnTerug
+            // 
+            this.btnTerug.BackColor = System.Drawing.Color.Black;
+            this.btnTerug.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTerug.ForeColor = System.Drawing.Color.Red;
+            this.btnTerug.Location = new System.Drawing.Point(12, 965);
+            this.btnTerug.Name = "btnTerug";
+            this.btnTerug.Size = new System.Drawing.Size(104, 55);
+            this.btnTerug.TabIndex = 44;
+            this.btnTerug.Text = "🠔";
+            this.btnTerug.UseVisualStyleBackColor = false;
+            this.btnTerug.Click += new System.EventHandler(this.btnTerug_Click);
+            // 
             // AgendaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -468,6 +482,7 @@ namespace LayOut_Wall_i
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1882, 1055);
+            this.Controls.Add(this.btnTerug);
             this.Controls.Add(this.lbNaam);
             this.Controls.Add(this.lbDatum3);
             this.Controls.Add(this.lbVak2);
@@ -535,5 +550,6 @@ namespace LayOut_Wall_i
         private System.Windows.Forms.Label lbDatum3;
         private System.Windows.Forms.Label lbNaam;
         private System.Windows.Forms.DateTimePicker datePicker;
+        private System.Windows.Forms.Button btnTerug;
     }
 }

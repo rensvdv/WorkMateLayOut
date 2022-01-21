@@ -52,15 +52,32 @@ namespace LayOut_Wall_i
 
         private void Recoginition(object sender, SpeechRecognizedEventArgs e)
         {
+            
             if (e.Result.Text.Contains("back") || e.Result.Text.Contains("menu"))
             {
                 spraak.Reageer(e.Result.Text);
                 Form1 form = new Form1();
                 //KeerTerug(form);
             }
-            if (e.Result.Text.Contains("show"))
+            if (e.Result.Text.Contains("see"))
             {
-                spraak.Reageer("show");
+                spraak.Reageer(e.Result.Text);
+                btnZieAfspraken_Click(sender,e);
+            }
+            if(e.Result.Text.Contains("planning"))
+            {
+                spraak.Reageer(e.Result.Text);
+                btnDagplanning_Click(sender,e);
+            }
+            if(e.Result.Text.Contains("send"))
+            {
+                spraak.Reageer(e.Result.Text);
+                btnEmailSturen_Click(sender,e);
+            }
+            if(e.Result.Text.Contains("small"))
+            {
+                spraak.Reageer(e.Result.Text);
+                btnAfspraakMaken_Click(sender,e);
             }
         }
 
@@ -150,6 +167,13 @@ namespace LayOut_Wall_i
         private void pbAchtergrond_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnTerug_Click(object sender, EventArgs e)
+        {
+            BeginschermNaInloggen begin = new BeginschermNaInloggen(this.gebruiker);
+            this.Hide();
+            begin.ShowDialog();
         }
     }
 }
