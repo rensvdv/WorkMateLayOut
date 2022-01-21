@@ -29,6 +29,7 @@ namespace HetWeer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblTilburg = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,10 +45,8 @@ namespace HetWeer
             this.lbHumiditeit = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pbWolk = new System.Windows.Forms.PictureBox();
-            this.pbAchtergrondWeer = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWolk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAchtergrondWeer)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTilburg
@@ -65,6 +64,7 @@ namespace HetWeer
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tw Cen MT Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(410, 384);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(213, 47);
@@ -75,6 +75,7 @@ namespace HetWeer
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tw Cen MT Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(410, 537);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(153, 47);
@@ -85,6 +86,7 @@ namespace HetWeer
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tw Cen MT Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(929, 384);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(216, 47);
@@ -93,6 +95,7 @@ namespace HetWeer
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Desktop;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(418, 779);
             this.dataGridView1.Name = "dataGridView1";
@@ -105,7 +108,7 @@ namespace HetWeer
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tw Cen MT Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(929, 537);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 47);
@@ -127,7 +130,7 @@ namespace HetWeer
             // 
             this.lbWolken.AutoSize = true;
             this.lbWolken.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWolken.ForeColor = System.Drawing.Color.Red;
+            this.lbWolken.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lbWolken.Location = new System.Drawing.Point(1743, 124);
             this.lbWolken.Name = "lbWolken";
             this.lbWolken.Size = new System.Drawing.Size(147, 44);
@@ -138,6 +141,7 @@ namespace HetWeer
             // 
             this.lblNederland.AutoSize = true;
             this.lblNederland.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNederland.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblNederland.Location = new System.Drawing.Point(31, 82);
             this.lblNederland.Name = "lblNederland";
             this.lblNederland.Size = new System.Drawing.Size(305, 69);
@@ -149,7 +153,7 @@ namespace HetWeer
             this.lbTemperatuur.AutoSize = true;
             this.lbTemperatuur.Font = new System.Drawing.Font("Book Antiqua", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemperatuur.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lbTemperatuur.Location = new System.Drawing.Point(654, 409);
+            this.lbTemperatuur.Location = new System.Drawing.Point(661, 384);
             this.lbTemperatuur.Name = "lbTemperatuur";
             this.lbTemperatuur.Size = new System.Drawing.Size(123, 47);
             this.lbTemperatuur.TabIndex = 20;
@@ -160,7 +164,7 @@ namespace HetWeer
             this.lbVoeltAls.AutoSize = true;
             this.lbVoeltAls.Font = new System.Drawing.Font("Book Antiqua", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVoeltAls.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbVoeltAls.Location = new System.Drawing.Point(594, 562);
+            this.lbVoeltAls.Location = new System.Drawing.Point(609, 538);
             this.lbVoeltAls.Name = "lbVoeltAls";
             this.lbVoeltAls.Size = new System.Drawing.Size(115, 47);
             this.lbVoeltAls.TabIndex = 21;
@@ -171,7 +175,7 @@ namespace HetWeer
             this.lbWindSnelheid.AutoSize = true;
             this.lbWindSnelheid.Font = new System.Drawing.Font("Book Antiqua", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWindSnelheid.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbWindSnelheid.Location = new System.Drawing.Point(1176, 409);
+            this.lbWindSnelheid.Location = new System.Drawing.Point(1185, 384);
             this.lbWindSnelheid.Name = "lbWindSnelheid";
             this.lbWindSnelheid.Size = new System.Drawing.Size(119, 47);
             this.lbWindSnelheid.TabIndex = 22;
@@ -182,7 +186,7 @@ namespace HetWeer
             this.lbHumiditeit.AutoSize = true;
             this.lbHumiditeit.Font = new System.Drawing.Font("Book Antiqua", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHumiditeit.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbHumiditeit.Location = new System.Drawing.Point(1139, 562);
+            this.lbHumiditeit.Location = new System.Drawing.Point(1163, 537);
             this.lbHumiditeit.Name = "lbHumiditeit";
             this.lbHumiditeit.Size = new System.Drawing.Size(112, 47);
             this.lbHumiditeit.TabIndex = 23;
@@ -210,20 +214,11 @@ namespace HetWeer
             this.pbWolk.TabIndex = 16;
             this.pbWolk.TabStop = false;
             // 
-            // pbAchtergrondWeer
-            // 
-            this.pbAchtergrondWeer.Image = global::LayOut_Wall_i.Properties.Resources.WeerAchtergrond;
-            this.pbAchtergrondWeer.Location = new System.Drawing.Point(-6, -23);
-            this.pbAchtergrondWeer.Name = "pbAchtergrondWeer";
-            this.pbAchtergrondWeer.Size = new System.Drawing.Size(2082, 1078);
-            this.pbAchtergrondWeer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbAchtergrondWeer.TabIndex = 25;
-            this.pbAchtergrondWeer.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbHumiditeit);
@@ -240,13 +235,11 @@ namespace HetWeer
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTilburg);
-            this.Controls.Add(this.pbAchtergrondWeer);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWolk)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAchtergrondWeer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,7 +261,6 @@ namespace HetWeer
         private System.Windows.Forms.Label lbVoeltAls;
         private System.Windows.Forms.Label lbWindSnelheid;
         private System.Windows.Forms.Label lbHumiditeit;
-        private System.Windows.Forms.PictureBox pbAchtergrondWeer;
         private System.Windows.Forms.Button button1;
     }
 }

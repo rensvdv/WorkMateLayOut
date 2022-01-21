@@ -107,11 +107,11 @@ namespace LayOut_Wall_i
             // 
             this.lbKlas2.AutoSize = true;
             this.lbKlas2.BackColor = System.Drawing.SystemColors.Control;
-            this.lbKlas2.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKlas2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbKlas2.ForeColor = System.Drawing.Color.Red;
             this.lbKlas2.Location = new System.Drawing.Point(676, 317);
             this.lbKlas2.Name = "lbKlas2";
-            this.lbKlas2.Size = new System.Drawing.Size(44, 31);
+            this.lbKlas2.Size = new System.Drawing.Size(46, 23);
             this.lbKlas2.TabIndex = 6;
             this.lbKlas2.Text = "......";
             // 
@@ -129,33 +129,33 @@ namespace LayOut_Wall_i
             // lbAgenda
             // 
             this.lbAgenda.AutoSize = true;
-            this.lbAgenda.Font = new System.Drawing.Font("Ravie", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAgenda.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAgenda.ForeColor = System.Drawing.Color.Crimson;
             this.lbAgenda.Location = new System.Drawing.Point(541, 227);
             this.lbAgenda.Name = "lbAgenda";
-            this.lbAgenda.Size = new System.Drawing.Size(204, 52);
+            this.lbAgenda.Size = new System.Drawing.Size(164, 44);
             this.lbAgenda.TabIndex = 8;
             this.lbAgenda.Text = "Agenda";
             // 
             // lbDocent2
             // 
             this.lbDocent2.AutoSize = true;
-            this.lbDocent2.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDocent2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDocent2.ForeColor = System.Drawing.Color.Red;
-            this.lbDocent2.Location = new System.Drawing.Point(677, 468);
+            this.lbDocent2.Location = new System.Drawing.Point(676, 468);
             this.lbDocent2.Name = "lbDocent2";
-            this.lbDocent2.Size = new System.Drawing.Size(44, 31);
+            this.lbDocent2.Size = new System.Drawing.Size(46, 23);
             this.lbDocent2.TabIndex = 10;
             this.lbDocent2.Text = "......";
             // 
             // lbLokaal2
             // 
             this.lbLokaal2.AutoSize = true;
-            this.lbLokaal2.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLokaal2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLokaal2.ForeColor = System.Drawing.Color.Red;
             this.lbLokaal2.Location = new System.Drawing.Point(677, 416);
             this.lbLokaal2.Name = "lbLokaal2";
-            this.lbLokaal2.Size = new System.Drawing.Size(44, 31);
+            this.lbLokaal2.Size = new System.Drawing.Size(46, 23);
             this.lbLokaal2.TabIndex = 11;
             this.lbLokaal2.Text = "......";
             // 
@@ -182,7 +182,7 @@ namespace LayOut_Wall_i
             // 
             // tbKorteBeschrijving
             // 
-            this.tbKorteBeschrijving.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbKorteBeschrijving.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbKorteBeschrijving.Location = new System.Drawing.Point(37, 299);
             this.tbKorteBeschrijving.Multiline = true;
             this.tbKorteBeschrijving.Name = "tbKorteBeschrijving";
@@ -191,20 +191,18 @@ namespace LayOut_Wall_i
             // 
             // tbTitel
             // 
-            this.tbTitel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTitel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTitel.Location = new System.Drawing.Point(37, 201);
-            this.tbTitel.Multiline = true;
             this.tbTitel.Name = "tbTitel";
-            this.tbTitel.Size = new System.Drawing.Size(246, 29);
+            this.tbTitel.Size = new System.Drawing.Size(246, 30);
             this.tbTitel.TabIndex = 16;
             // 
             // tbMailOntvanger
             // 
-            this.tbMailOntvanger.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMailOntvanger.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMailOntvanger.Location = new System.Drawing.Point(11, 113);
-            this.tbMailOntvanger.Multiline = true;
             this.tbMailOntvanger.Name = "tbMailOntvanger";
-            this.tbMailOntvanger.Size = new System.Drawing.Size(242, 29);
+            this.tbMailOntvanger.Size = new System.Drawing.Size(242, 34);
             this.tbMailOntvanger.TabIndex = 17;
             // 
             // lbNaamOntvanger
@@ -251,9 +249,8 @@ namespace LayOut_Wall_i
             // 
             this.tbTitelMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTitelMail.Location = new System.Drawing.Point(11, 201);
-            this.tbTitelMail.Multiline = true;
             this.tbTitelMail.Name = "tbTitelMail";
-            this.tbTitelMail.Size = new System.Drawing.Size(242, 29);
+            this.tbTitelMail.Size = new System.Drawing.Size(242, 34);
             this.tbTitelMail.TabIndex = 21;
             // 
             // lbMailOntvanger
@@ -268,11 +265,10 @@ namespace LayOut_Wall_i
             // 
             // tbOntvanger
             // 
-            this.tbOntvanger.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbOntvanger.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbOntvanger.Location = new System.Drawing.Point(37, 113);
-            this.tbOntvanger.Multiline = true;
             this.tbOntvanger.Name = "tbOntvanger";
-            this.tbOntvanger.Size = new System.Drawing.Size(246, 29);
+            this.tbOntvanger.Size = new System.Drawing.Size(246, 30);
             this.tbOntvanger.TabIndex = 24;
             // 
             // lbBeschrijving
@@ -400,7 +396,7 @@ namespace LayOut_Wall_i
             // 
             // tbBeschrijving
             // 
-            this.tbBeschrijving.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbBeschrijving.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBeschrijving.Location = new System.Drawing.Point(11, 299);
             this.tbBeschrijving.Multiline = true;
             this.tbBeschrijving.Name = "tbBeschrijving";
@@ -436,22 +432,22 @@ namespace LayOut_Wall_i
             // lbVak2
             // 
             this.lbVak2.AutoSize = true;
-            this.lbVak2.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVak2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVak2.ForeColor = System.Drawing.Color.Red;
-            this.lbVak2.Location = new System.Drawing.Point(677, 365);
+            this.lbVak2.Location = new System.Drawing.Point(676, 368);
             this.lbVak2.Name = "lbVak2";
-            this.lbVak2.Size = new System.Drawing.Size(44, 31);
+            this.lbVak2.Size = new System.Drawing.Size(46, 23);
             this.lbVak2.TabIndex = 41;
             this.lbVak2.Text = "......";
             // 
             // lbDatum3
             // 
             this.lbDatum3.AutoSize = true;
-            this.lbDatum3.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDatum3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDatum3.ForeColor = System.Drawing.Color.Red;
-            this.lbDatum3.Location = new System.Drawing.Point(677, 512);
+            this.lbDatum3.Location = new System.Drawing.Point(676, 517);
             this.lbDatum3.Name = "lbDatum3";
-            this.lbDatum3.Size = new System.Drawing.Size(44, 31);
+            this.lbDatum3.Size = new System.Drawing.Size(46, 23);
             this.lbDatum3.TabIndex = 42;
             this.lbDatum3.Text = "......";
             // 

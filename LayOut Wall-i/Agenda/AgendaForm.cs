@@ -19,12 +19,6 @@ namespace LayOut_Wall_i
         Gebruiker gebruiker;
         private Agenda.Agenda agenda;
         private Agenda.Afspraak afspraak;
-        public AgendaForm()
-        {
-            InitializeComponent();
-            this.gebruiker = new Gebruiker("ludo");
-            this.agenda = new Agenda.Agenda(this.gebruiker,"klas3","Freek","P.018","Business");
-        }
         public AgendaForm(Gebruiker gebruiker)
         {
             InitializeComponent();
@@ -74,8 +68,7 @@ namespace LayOut_Wall_i
         {
             lbxAfspraken.Items.Clear();
             agenda.Afspraken.Clear();
-            //agenda.HaalAfsprakenOp();
-            agenda.Afspraken.Add(new Agenda.Afspraak("cool",10,"Het is lekker weer"));
+            agenda.HaalAfsprakenOp();
             if (agenda.Afspraken.Count > 0)
             {
                 foreach (var afspraak in agenda.Afspraken)
@@ -92,7 +85,7 @@ namespace LayOut_Wall_i
 
         private void btnDagplanning_Click(object sender, EventArgs e)
         {
-            //agenda.HaalLeerlingGegevensOp();
+            agenda.HaalLeerlingGegevensOp();
             lbDatum3.Text = DateTime.Today.ToString();
             lbDocent2.Text = agenda.Docent;
             lbKlas2.Text = agenda.Klas;

@@ -25,29 +25,7 @@ namespace HetWeer
         public Form1()
         {
             InitializeComponent();
-
-            lbTemperatuur.Parent = pbAchtergrondWeer;
-            lbTemperatuur.BackColor = Color.Transparent;
-
-            lbVoeltAls.Parent = pbAchtergrondWeer;
-            lbVoeltAls.BackColor = Color.Transparent;
-
-            lbWindSnelheid.Parent = pbAchtergrondWeer;
-            lbWindSnelheid.BackColor = Color.Transparent;
-
-            lbHumiditeit.Parent = pbAchtergrondWeer;
-            lbHumiditeit.BackColor = Color.Transparent;
-
-            lbWolken.Parent = pbAchtergrondWeer;
-            lbWolken.BackColor = Color.Transparent;
-
-
-            lblNederland.Parent = pbAchtergrondWeer;
-            lblNederland.BackColor = Color.Transparent;
-
-
-            lblTilburg.Parent = pbAchtergrondWeer;
-            lblTilburg.BackColor = Color.Transparent;
+            VeranderAchtergrond(Color.Transparent);
         }
 
         //2e constructor om gebruiker mee te geven na inloggen
@@ -56,29 +34,19 @@ namespace HetWeer
             InitializeComponent();
 
             this.gebruiker = gebruiker;
+            VeranderAchtergrond(Color.Transparent);
+        }
 
-            lbTemperatuur.Parent = pbAchtergrondWeer;
-            lbTemperatuur.BackColor = Color.Transparent;
-
-            lbVoeltAls.Parent = pbAchtergrondWeer;
-            lbVoeltAls.BackColor = Color.Transparent;
-
-            lbWindSnelheid.Parent = pbAchtergrondWeer;
-            lbWindSnelheid.BackColor = Color.Transparent;
-
-            lbHumiditeit.Parent = pbAchtergrondWeer;
-            lbHumiditeit.BackColor = Color.Transparent;
-
-            lbWolken.Parent = pbAchtergrondWeer;
-            lbWolken.BackColor = Color.Transparent;
-
-
-            lblNederland.Parent = pbAchtergrondWeer;
-            lblNederland.BackColor = Color.Transparent;
-
-
-            lblTilburg.Parent = pbAchtergrondWeer;
-            lblTilburg.BackColor = Color.Transparent;
+        private void VeranderAchtergrond(Color color)
+        {
+            foreach (Control control in Controls)
+            {
+                Label lb = control as Label;
+                if (lb != null)
+                {
+                    lb.BackColor = color;
+                }
+            }
         }
         private void WeerTonen()
         {
