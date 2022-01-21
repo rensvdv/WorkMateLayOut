@@ -27,6 +27,7 @@ namespace LayOut_Wall_i
             lbDamage.Text = $"Damage: {player.Damage}";
             lbMovement.Text = $"Movement: {player.BewegingSnelheid}";
             lbBullets.Text = $"Bullets: {player.Kogels}";
+            lbSuperAttack.Text = $"SuperAttack:\n{player.SuperAanval}";
         }
 
         private void btnTerug_Click(object sender, EventArgs e)
@@ -99,6 +100,11 @@ namespace LayOut_Wall_i
                 speler = new Speler(naam, 110, 30, 15, 6, Speler.PowerAttack.SuperDuper);
                 CharacterStats(speler);
             }
+        }
+
+        private void lbDamage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

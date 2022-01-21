@@ -49,7 +49,7 @@ namespace LayOut_Wall_i
             this.lbLeven.AutoSize = true;
             this.lbLeven.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLeven.ForeColor = System.Drawing.Color.Red;
-            this.lbLeven.Location = new System.Drawing.Point(827, 36);
+            this.lbLeven.Location = new System.Drawing.Point(1679, 36);
             this.lbLeven.Name = "lbLeven";
             this.lbLeven.Size = new System.Drawing.Size(132, 32);
             this.lbLeven.TabIndex = 13;
@@ -81,7 +81,7 @@ namespace LayOut_Wall_i
             // 
             this.tbNaam.Enabled = false;
             this.tbNaam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNaam.Location = new System.Drawing.Point(448, 61);
+            this.tbNaam.Location = new System.Drawing.Point(875, 84);
             this.tbNaam.Name = "tbNaam";
             this.tbNaam.Size = new System.Drawing.Size(144, 30);
             this.tbNaam.TabIndex = 10;
@@ -90,7 +90,7 @@ namespace LayOut_Wall_i
             // 
             this.prBarPlayer.BackColor = System.Drawing.Color.Lime;
             this.prBarPlayer.ForeColor = System.Drawing.Color.Red;
-            this.prBarPlayer.Location = new System.Drawing.Point(833, 91);
+            this.prBarPlayer.Location = new System.Drawing.Point(1685, 91);
             this.prBarPlayer.Name = "prBarPlayer";
             this.prBarPlayer.Size = new System.Drawing.Size(209, 35);
             this.prBarPlayer.TabIndex = 9;
@@ -105,7 +105,7 @@ namespace LayOut_Wall_i
             this.lbTijd.AutoSize = true;
             this.lbTijd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTijd.ForeColor = System.Drawing.Color.Red;
-            this.lbTijd.Location = new System.Drawing.Point(15, 665);
+            this.lbTijd.Location = new System.Drawing.Point(15, 904);
             this.lbTijd.Name = "lbTijd";
             this.lbTijd.Size = new System.Drawing.Size(100, 32);
             this.lbTijd.TabIndex = 15;
@@ -113,7 +113,7 @@ namespace LayOut_Wall_i
             // 
             // pbSpeler
             // 
-            this.pbSpeler.Location = new System.Drawing.Point(582, 365);
+            this.pbSpeler.Location = new System.Drawing.Point(888, 477);
             this.pbSpeler.Name = "pbSpeler";
             this.pbSpeler.Size = new System.Drawing.Size(164, 167);
             this.pbSpeler.TabIndex = 14;
@@ -128,7 +128,7 @@ namespace LayOut_Wall_i
             this.lbEnemyKills.AutoSize = true;
             this.lbEnemyKills.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEnemyKills.ForeColor = System.Drawing.Color.Red;
-            this.lbEnemyKills.Location = new System.Drawing.Point(166, 665);
+            this.lbEnemyKills.Location = new System.Drawing.Point(166, 904);
             this.lbEnemyKills.Name = "lbEnemyKills";
             this.lbEnemyKills.Size = new System.Drawing.Size(201, 32);
             this.lbEnemyKills.TabIndex = 17;
@@ -139,7 +139,7 @@ namespace LayOut_Wall_i
             this.lbEnemy.AutoSize = true;
             this.lbEnemy.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEnemy.ForeColor = System.Drawing.Color.Red;
-            this.lbEnemy.Location = new System.Drawing.Point(839, 665);
+            this.lbEnemy.Location = new System.Drawing.Point(1669, 904);
             this.lbEnemy.Name = "lbEnemy";
             this.lbEnemy.Size = new System.Drawing.Size(225, 32);
             this.lbEnemy.TabIndex = 16;
@@ -149,7 +149,7 @@ namespace LayOut_Wall_i
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1089, 732);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.lbLeven);
             this.Controls.Add(this.lbKogels);
             this.Controls.Add(this.lbScore);

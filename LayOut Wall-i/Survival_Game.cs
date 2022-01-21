@@ -91,8 +91,8 @@ namespace LayOut_Wall_i
                 PictureBox kogels = new PictureBox();
                 kogels.Image = Properties.Resources.Bullets;
                 kogels.SizeMode = PictureBoxSizeMode.Zoom;
-                kogels.Left = enemy.RandomLocation(10, this.ClientSize.Width);
-                kogels.Top = enemy.RandomLocation(10, this.ClientSize.Height);
+                kogels.Left = enemy.RandomLocation(10, this.ClientSize.Width - 10);
+                kogels.Top = enemy.RandomLocation(10, this.ClientSize.Height- 10);
                 kogels.Tag = "kogels";
                 this.Controls.Add(kogels);
                 kogels.BringToFront();
@@ -171,13 +171,13 @@ namespace LayOut_Wall_i
             lbTijd.Text = $"Tijd: {tijd}";
             if (tijd % 7 == 0)
             {
-                MakeEnemy(30, 15, 5);
+                MakeEnemy(30, 15, 30);
             }
             if (tijd >= 40)
             {
                 if (tijd % 7 == 0)
                 {
-                    MakeEnemy(40, 20, 10);
+                    MakeEnemy(40, 20, 40);
                 }
             }
         }

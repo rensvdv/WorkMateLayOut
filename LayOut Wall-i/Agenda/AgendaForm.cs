@@ -19,32 +19,18 @@ namespace LayOut_Wall_i
         Gebruiker gebruiker;
         private Agenda.Agenda agenda;
         private Agenda.Afspraak afspraak;
+        public AgendaForm()
+        {
+            InitializeComponent();
+            this.gebruiker = new Gebruiker("ludo");
+            this.agenda = new Agenda.Agenda(this.gebruiker,"klas3","Freek","P.018","Business");
+        }
         public AgendaForm(Gebruiker gebruiker)
         {
             InitializeComponent();
             this.gebruiker = gebruiker;
             agenda = new Agenda.Agenda(gebruiker,gebruiker.Klas,gebruiker.Docenten,gebruiker.Lokaal,gebruiker.Vak);
             ZetAlleLabelAchtergrondenTransparant(Color.Transparent);
-
-            lbAfspraak.Parent = pbAchtergrond;
-            lbAfspraaksduur.Parent = pbAchtergrond;
-            lbxAfspraken.Parent = pbAchtergrond;
-            lbAgenda.Parent = pbAchtergrond;
-            lbBeschrijving.Parent = pbAchtergrond;
-            lbDatum.Parent = pbAchtergrond;
-            lbDatum2.Parent = pbAchtergrond;
-            lbDocent1.Parent = pbAchtergrond;
-            lbDocent2.Parent = pbAchtergrond;
-            lbKlas.Parent = pbAchtergrond;
-            lbKorteBeschrijving.Parent = pbAchtergrond;
-            lbLokaal1.Parent = pbAchtergrond;
-            lbLokaal2.Parent = pbAchtergrond;
-            lbMailOntvanger.Parent = pbAchtergrond;
-            lbNaamOntvanger.Parent = pbAchtergrond;
-            lbTitel.Parent = pbAchtergrond;
-            lbTitel2.Parent = pbAchtergrond;
-            lbVak1.Parent = pbAchtergrond;
-            lbKlas2.Parent = pbAchtergrond;
         }
 
         private void ZetAlleLabelAchtergrondenTransparant(Color color)
@@ -88,7 +74,8 @@ namespace LayOut_Wall_i
         {
             lbxAfspraken.Items.Clear();
             agenda.Afspraken.Clear();
-            agenda.HaalAfsprakenOp();
+            //agenda.HaalAfsprakenOp();
+            agenda.Afspraken.Add(new Agenda.Afspraak("cool",10,"Het is lekker weer"));
             if (agenda.Afspraken.Count > 0)
             {
                 foreach (var afspraak in agenda.Afspraken)
@@ -105,7 +92,7 @@ namespace LayOut_Wall_i
 
         private void btnDagplanning_Click(object sender, EventArgs e)
         {
-            agenda.HaalLeerlingGegevensOp();
+            //agenda.HaalLeerlingGegevensOp();
             lbDatum3.Text = DateTime.Today.ToString();
             lbDocent2.Text = agenda.Docent;
             lbKlas2.Text = agenda.Klas;
@@ -164,7 +151,7 @@ namespace LayOut_Wall_i
         private void lbAfspraken_SelectedIndexChanged(object sender, EventArgs e)
         {
             Agenda.Afspraak afspraak = lbxAfspraken.SelectedItem as Agenda.Afspraak;
-            MessageBox.Show($"Titel: {afspraak.Titel}\nBeschrijving: {afspraak.Beschrijving}\n TijdsDuur: {afspraak.Tijd}", "Afspraakgegevens");
+            MessageBox.Show($"Titel: {afspraak.Titel}\nBeschrijving: {afspraak.Beschrijving}\nAfspraakduur: {afspraak.Tijd} uur", "Afspraakgegevens");
         }
 
         private void pbAchtergrond_Click(object sender, EventArgs e)
