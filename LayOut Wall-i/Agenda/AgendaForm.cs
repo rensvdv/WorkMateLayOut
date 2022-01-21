@@ -61,6 +61,10 @@ namespace LayOut_Wall_i
 
         private void AgendaForm_Load(object sender, EventArgs e)
         {
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            this.WindowState = FormWindowState.Maximized;
+
             Form.CheckForIllegalCrossThreadCalls = false;
             spraak.speechRec.SpeechRecognized += Recoginition;
             lbNaam.Text = $"Welkom {gebruiker.Naam}";

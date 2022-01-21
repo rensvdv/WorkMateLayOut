@@ -152,6 +152,10 @@ namespace LayOut_Wall_i
 
         private void Survival_Game_Load_1(object sender, EventArgs e)
         {
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            this.WindowState = FormWindowState.Maximized;
+
             prBarPlayer.Maximum = speler.Leven;
             prBarPlayer.Value = speler.Leven;
             tbNaam.Text = speler.PlayerNaam;

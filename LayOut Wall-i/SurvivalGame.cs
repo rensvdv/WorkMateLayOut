@@ -54,6 +54,10 @@ namespace LayOut_Wall_i
 
         private void SurvivalGame_Load(object sender, EventArgs e)
         {
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            this.WindowState = FormWindowState.Maximized;
+
             foreach (string score in lb.Scores)
             {
                 string[] scor = score.Split(' ');

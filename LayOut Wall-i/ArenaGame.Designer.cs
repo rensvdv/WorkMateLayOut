@@ -622,6 +622,7 @@ namespace LayOut_Wall_i
             this.Controls.Add(this.pbAchtergrond);
             this.Name = "ArenaGame";
             this.Text = "ArenaGame";
+            this.Load += new System.EventHandler(this.ArenaGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRight2)).EndInit();

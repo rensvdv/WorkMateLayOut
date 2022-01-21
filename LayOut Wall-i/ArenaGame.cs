@@ -265,6 +265,13 @@ namespace LayOut_Wall_i
             this.Hide();
             game.ShowDialog();
         }
+
+        private void ArenaGame_Load(object sender, EventArgs e)
+        {
+            this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }
 
