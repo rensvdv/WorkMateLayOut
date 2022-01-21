@@ -27,7 +27,7 @@ namespace LayOut_Wall_i
             InitializeComponent();
 
             player1 = new Player("Cezar", Player.Karakter.Techneut);
-            player2 = new Player("Zakria", Player.Karakter.Keizerin);
+            player2 = new Player("Zakaria", Player.Karakter.Keizerin);
 
             Kaart kaart1 = new Kaart("Ridder");
             Kaart kaart2 = new Kaart("Schildknaap");
@@ -98,10 +98,10 @@ namespace LayOut_Wall_i
         private void Status()
         {
             lblVerlies1.Text = player1.Verlies.ToString();
-            lblVerlies2.Text = player2.Verlies.ToString();
+            lbVerlies2.Text = player2.Verlies.ToString();
 
             lblWinst1.Text = player1.Winst.ToString();
-            lblWinst2.Text = player2.Winst.ToString();
+            lbWinst2.Text = player2.Winst.ToString();
 
             lblScore2.Text = player1.Score.ToString();
             lblScore4.Text = player2.Score.ToString();
@@ -271,6 +271,216 @@ namespace LayOut_Wall_i
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
             this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void pbAchtergrond_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KleurBalk2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KleurBalk1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblType2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblType1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblKar2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblVS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblK1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblScore3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblScore1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblVerlies2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblVerlies1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblWinst2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblScore4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblWinst1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblScore2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbRight2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbMain2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbLeft2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbRight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbMain_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbLeft_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbVerhaal6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbVerhaal5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbVerhaal4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbVerhaal3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbVerhaal2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbVerhaal1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
